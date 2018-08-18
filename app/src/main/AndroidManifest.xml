@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bws.starlab">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDFVOM4ifkX8zm9l237F4S4iXAJaKTcato" />
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".Firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".CreateJobActivity" />
+        <activity android:name=".MyJobActivity" />
+        <activity android:name=".AssetsDetailsActivity" />
+        <activity android:name=".CreateTimeSheetActivity" />
+        <activity android:name=".MyAccountActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".DashBoardClientActivity" />
+        <activity android:name=".MyServiceActivity" />
+        <activity android:name=".ClientViews.CreateServiceRequestActivity" />
+        <activity android:name=".ClientViews.ViewInvoiceStatusActivity" />
+        <activity android:name=".PushNotificationActivity" />
+        <activity android:name=".ModifyScheduleActivity" />
+        <activity android:name=".ManagerViews.ViewJobsActivity" />
+        <activity android:name=".ManagerViews.DashBoardManagerActivity" />
+        <activity android:name=".ManagerViews.ManagerJobDetailsActivity"></activity>
+    </application>
+
+</manifest>

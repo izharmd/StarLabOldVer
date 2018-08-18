@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bws.starlab.CreateJobActivity">
+
+    <include
+        android:id="@+id/container_header_lyt"
+        layout="@layout/header_username_activity" />
+
+    <include
+        layout="@layout/header_activity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.7"
+            android:orientation="vertical"
+            android:weightSum="20">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/imv_Profile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_user_profile"
+                    android:layout_gravity="center"/>
+
+                <TextView
+
+                    style="@style/strendredPromtText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:textStyle="bold"
+                    android:text="Set your profile picture by double clicking on the left image." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <CheckBox
+                    android:id="@+id/checkbox_setting1"
+                    style="@style/CheckBox_Setting"
+                    android:src="@android:drawable/alert_dark_frame" />
+
+                <TextView
+                    style="@style/strendredPromtText"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:text="Never remember password" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <CheckBox
+                    android:id="@+id/checkbox_setting2"
+                    style="@style/CheckBox_Setting"
+                    android:src="@android:drawable/alert_dark_frame" />
+
+                <TextView
+                    style="@style/strendredPromtText"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:text="Show Social Networking Links" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <CheckBox
+                    android:id="@+id/checkbox_setting3"
+                    style="@style/CheckBox_Setting"
+                    android:src="@android:drawable/alert_dark_frame" />
+
+                <TextView
+                    style="@style/strendredPromtText"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:text="Save last search results" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <CheckBox
+                    android:id="@+id/checkbox_setting4"
+                    style="@style/CheckBox_Setting"
+                    android:src="@android:drawable/alert_dark_frame" />
+
+                <TextView
+                    style="@style/strendredPromtText"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:text="Show only Forename with Welcome" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/footer_activity"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:background="@color/color_orange_Bg"/>
+    </LinearLayout>
+
+
+</LinearLayout>

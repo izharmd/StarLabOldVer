@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/color_gray_bg"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_TodayJob"
+        style="@style/dashboard_LinerLayout">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:src="@mipmap/ic_my_job" />
+
+        <TextView
+            style="@style/dashboard_logo_Text"
+            android:text="Today's Jobs" />
+    </LinearLayout>
+
+    <View style="@style/dashboard_View"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_ViewSchedule"
+        style="@style/dashboard_LinerLayout">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".6"
+            android:src="@mipmap/ic_create_job" />
+
+        <TextView
+            style="@style/dashboard_logo_Text"
+            android:text="View schedule" />
+    </LinearLayout>
+
+    <View style="@style/dashboard_View"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_AproveTimeSheet"
+        style="@style/dashboard_LinerLayout">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".6"
+            android:src="@mipmap/ic_modify_schedule" />
+
+        <TextView
+            style="@style/dashboard_logo_Text"
+            android:text="Approve timesheet" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_ViewBillingStatus"
+        style="@style/dashboard_LinerLayout">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".6"
+            android:src="@mipmap/ic_modify_schedule" />
+
+        <TextView
+            style="@style/dashboard_logo_Text"
+            android:text="View billing status" />
+    </LinearLayout>
+
+
+    <View style="@style/dashboard_View"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_MyAccount"
+        style="@style/dashboard_LinerLayout">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".6"
+            android:src="@mipmap/ic_create_job" />
+
+        <TextView
+            style="@style/dashboard_logo_Text"
+            android:text="My Account" />
+    </LinearLayout>
+
+    <View style="@style/dashboard_View"></View>
+
+    <!--
+        <View style="@style/dashboard_View"></View>-->
+
+</LinearLayout>

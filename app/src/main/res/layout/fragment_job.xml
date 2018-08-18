@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout style="@style/LinearLayout_createjob">
+
+            <TextView
+                style="@style/Text_view"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/textName"
+                style="@style/Text_view1"
+                android:text="Sorrin Appartments" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout_createjob">
+
+            <TextView
+                style="@style/Text_view"
+                android:text="Contact person" />
+
+            <TextView
+                android:id="@+id/textContactPerson"
+                style="@style/Text_view1"
+                android:text="Mr. John Stark" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout_createjob">
+
+            <TextView
+                style="@style/Text_view"
+                android:text="Job code" />
+
+            <TextView
+                android:id="@+id/textJobCode"
+                style="@style/Text_view1"
+                android:text="#INS23467" />
+
+        </LinearLayout>
+        <LinearLayout style="@style/LinearLayout_createjob">
+
+            <TextView
+                style="@style/Text_view"
+                android:text="Priority" />
+
+            <TextView
+                android:id="@+id/textPriority"
+                style="@style/Text_view1"
+                android:text="Immediate"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="70dp"
+            style="@style/LinearLayout_createjob">
+
+            <TextView
+                style="@style/Text_view"
+                android:layout_gravity="left"
+                android:text="Description" />
+
+            <TextView
+                android:id="@+id/textDiscription"
+                android:layout_height="70dp"
+                android:text="Installation of complete lighting solutions for 1st floor"
+                android:layout_gravity="left"
+                style="@style/Text_view1"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout_createjob">
+
+            <TextView
+                style="@style/Text_view"
+                android:text="Estimated time" />
+
+            <TextView
+                android:id="@+id/textdate"
+                style="@style/Text_view1"
+                android:text="3 hrs" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout_createjob">
+
+            <TextView
+                style="@style/Text_view"
+                android:text="Location" />
+
+            <TextView
+                android:id="@+id/textLocation"
+                style="@style/Text_view1"
+                android:text="West Berskhire" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/btnAssetsDetails"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ic_button"
+                android:text="Assets Details"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnLocateMap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ic_button"
+                android:text="Locate in map"
+                android:layout_marginLeft="10dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

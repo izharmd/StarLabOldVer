@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_user"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/textUserType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Welcome Sam MillerLogged in as: Service Engineer"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/color_orange_Bg"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="4"/>
+
+        <ImageView
+            android:id="@+id/imv_Shutdown"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_login_button"/>
+
+    </LinearLayout>
+
+</LinearLayout>

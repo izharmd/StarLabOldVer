@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bws.starlab.CreateJobActivity">
+
+    <include
+        android:id="@+id/container_header_lyt"
+        layout="@layout/header_username_activity" />
+
+    <include
+        android:id="@+id/container_header_lyt"
+        layout="@layout/header_activity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.7"
+            android:orientation="vertical"
+            android:weightSum="20">
+
+            <LinearLayout style="@style/LinearLayout_createjob">
+
+                <TextView
+                    style="@style/Text_view"
+
+                    android:text="Name" />
+
+                <TextView
+                    android:id="@+id/textAssetsName1"
+                    style="@style/Text_view1"
+                    android:text="Sorrin Appartments" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout_createjob">
+
+                <TextView
+                    style="@style/Text_view"
+                    android:text="Contact person" />
+
+                <TextView
+                    android:id="@+id/textAssetsName2"
+                    style="@style/Text_view1"
+                    android:text="Mr. John Stark" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout_createjob">
+
+                <TextView
+                    style="@style/Text_view"
+                    android:text="Job code" />
+
+                <TextView
+                    android:id="@+id/textResorce"
+                    style="@style/Text_view1"
+                    android:text="#INS23467" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/LinearLayout_createjob">
+
+                <TextView
+                    style="@style/Text_view"
+                    android:text="Priority" />
+
+                <TextView
+                    android:id="@+id/textOther"
+                    style="@style/Text_view1"
+                    android:text="Immediate" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/LinearLayout_createjob">
+
+                <TextView
+                    style="@style/Text_view"
+                    android:text="Description" />
+
+                <TextView
+                    style="@style/Text_view1"
+                    android:text="Lighting Installation" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout_createjob">
+
+                <TextView
+                    style="@style/Text_view"
+                    android:text="Engineer" />
+
+                <TextView
+                    style="@style/Text_view1"
+                    android:text="Sam Miller" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/LinearLayout_createjob">
+
+                <TextView
+                    style="@style/Text_view"
+                    android:text="Location" />
+
+                <TextView
+                    android:id="@+id/textTime"
+                    style="@style/Text_view1"
+                    android:text="West Berskhire" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_button"
+                android:text="View assets details"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/footer_activity"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:background="@color/color_orange_Bg"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

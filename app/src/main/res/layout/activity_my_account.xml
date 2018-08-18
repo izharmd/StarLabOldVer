@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bws.starlab.CreateJobActivity">
+
+    <include
+        android:id="@+id/container_header_lyt"
+        layout="@layout/header_username_activity" />
+
+    <include
+        android:id="@+id/container_header_lyt"
+        layout="@layout/header_activity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="20">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <LinearLayout style="@style/LinearLayout_createjob">
+
+                    <TextView
+                        style="@style/Text_view"
+                        android:text="Name" />
+
+                    <TextView
+                        android:id="@+id/textName"
+                        style="@style/Text_view1"
+                        android:text="Sam Miller" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayout_createjob">
+
+                    <TextView
+                        style="@style/Text_view"
+                        android:text="User id" />
+
+                    <TextView
+                        android:id="@+id/textUserId"
+                        style="@style/Text_view1"
+                        android:text="sam01" />
+
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/LinearLayout_createjob">
+
+                    <TextView
+                        style="@style/Text_view"
+                        android:text="Password" />
+
+                    <TextView
+                        android:id="@+id/textPassword"
+                        style="@style/Text_view1"
+                        android:text=" ******" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayout_createjob">
+
+                    <TextView
+                        android:id="@+id/textDesignation"
+                        style="@style/Text_view"
+                        android:text="Designation" />
+
+                    <TextView
+                        android:id="@+id/textTime"
+                        style="@style/Text_view1"
+                        android:text=" Network Manager" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <Button
+                    android:id="@+id/btnGeneralSetting"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_button"
+                    android:text="General settings"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <include
+            layout="@layout/footer_activity"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:background="@color/color_orange_Bg" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/color_gray_bg"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_MyJob"
+        style="@style/dashboard_LinerLayout">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:src="@mipmap/ic_my_job" />
+
+        <TextView
+            style="@style/dashboard_logo_Text"
+            android:text="My Jobs" />
+    </LinearLayout>
+
+    <View style="@style/dashboard_View"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_createNewJob"
+        style="@style/dashboard_LinerLayout">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".6"
+            android:src="@mipmap/ic_create_job" />
+
+        <TextView
+            style="@style/dashboard_logo_Text"
+            android:text="Create new job" />
+    </LinearLayout>
+
+    <View style="@style/dashboard_View"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_modifySchedule"
+        style="@style/dashboard_LinerLayout">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".6"
+            android:src="@mipmap/ic_modify_schedule" />
+
+        <TextView
+            style="@style/dashboard_logo_Text"
+            android:text="Modify schedule " />
+    </LinearLayout>
+
+    <View style="@style/dashboard_View"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_createTimeSheet"
+        style="@style/dashboard_LinerLayout">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".6"
+            android:src="@mipmap/ic_create_timesheet" />
+
+        <TextView
+            style="@style/dashboard_logo_Text"
+            android:text="Create timesheet" />
+    </LinearLayout>
+
+    <View style="@style/dashboard_View"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_MyAccount"
+        style="@style/dashboard_LinerLayout">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".6"
+            android:src="@mipmap/ic_create_job" />
+
+        <TextView
+            style="@style/dashboard_logo_Text"
+            android:text="My Account" />
+    </LinearLayout>
+
+    <View style="@style/dashboard_View"></View>
+
+    <!--
+        <View style="@style/dashboard_View"></View>-->
+
+</LinearLayout>

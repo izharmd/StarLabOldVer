@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/LinearLayout_createjob">
+
+            <TextView
+                style="@style/Text_view"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/textName"
+                style="@style/Text_view1"
+                android:text="candis store" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout_createjob">
+
+            <TextView
+                style="@style/Text_view"
+                android:text="Contact person" />
+
+            <TextView
+                android:id="@+id/textContactPerson"
+                style="@style/Text_view1"
+                android:text="Mr. Alex Cooper" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout_createjob">
+
+            <TextView
+                style="@style/Text_view"
+                android:text="Job code" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1.4"
+                android:background="@color/spinner_Bg">
+
+
+                <Spinner
+                    android:id="@+id/spinnerJobCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout_createjob">
+
+            <TextView
+                style="@style/Text_view"
+                android:text="Priority" />
+
+            <TextView
+                android:id="@+id/textPriority"
+                style="@style/Text_view1"
+                android:text="Normal" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout_createjob">
+
+            <TextView
+                style="@style/Text_view"
+                android:text="Description" />
+
+            <TextView
+                android:id="@+id/textDiscription"
+                style="@style/Text_view1"
+                android:singleLine="true"
+                android:text="Schedule Maintenance" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout_createjob">
+
+            <TextView
+                style="@style/Text_view"
+                android:text="Date" />
+
+            <TextView
+                android:id="@+id/textdate"
+                style="@style/Text_view1"
+                android:text="19 May 2014" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout_createjob">
+
+            <TextView
+                style="@style/Text_view"
+                android:text="Location" />
+
+            <TextView
+                android:id="@+id/textLocation"
+                style="@style/Text_view1"
+                android:text="London" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAssetsDetails"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_button"
+            android:text="Create Assets details"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

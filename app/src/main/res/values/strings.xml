@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">StarLab</string>
+
+    <string name="forgetpassword"><u>Forgot password?</u></string>
+    <string name="strDetailsStep3">IMPORTANT: Clinic dates QUANTITY of pipettes: /duration dependent on the number of pipettes to be serviced. Therefore, the quantities noted above must be accurate otherwise STARLAB cannot guarantee the servicing of any pipettes above the numbers stated within the allotted clinic timeframe.</string>
+
+
+</resources>
