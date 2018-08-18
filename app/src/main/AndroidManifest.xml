@@ -51,7 +51,8 @@
         <activity android:name=".ModifyScheduleActivity" />
         <activity android:name=".ManagerViews.ViewJobsActivity" />
         <activity android:name=".ManagerViews.DashBoardManagerActivity" />
-        <activity android:name=".ManagerViews.ManagerJobDetailsActivity"></activity>
+        <activity android:name=".ManagerViews.ManagerJobDetailsActivity" />
+        <activity android:name=".ManagerViews.AssetsDetailsManagerActivity"></activity>
     </application>
 
 </manifest>
