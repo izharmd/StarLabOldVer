@@ -51,107 +51,105 @@
                     <TextView
                         android:id="@+id/textAssetsName1"
                         style="@style/Text_view1"
-                        android:text="Sorrin Appartments" />
-
-                </LinearLayout>
-
-                <LinearLayout style="@style/LinearLayout_createjob">
-
-                    <TextView
-                        style="@style/Text_view"
-                        android:text="Contact person" />
-
-                    <TextView
-                        android:id="@+id/textAssetsName2"
-                        style="@style/Text_view1"
-                        android:text="Mr. John Stark" />
-
-                </LinearLayout>
-
-                <LinearLayout style="@style/LinearLayout_createjob">
-
-                    <TextView
-                        style="@style/Text_view"
-                        android:text="Job code" />
-
-                    <TextView
-                        android:id="@+id/textResorce"
-                        style="@style/Text_view1"
-                        android:text="#INS23467" />
-
-                </LinearLayout>
-
-
-                <LinearLayout style="@style/LinearLayout_createjob">
-
-                    <TextView
-                        style="@style/Text_view"
-                        android:text="Priority" />
-
-                    <TextView
-                        android:id="@+id/textOther"
-                        style="@style/Text_view1"
-                        android:text="Immediate" />
-
-                </LinearLayout>
-
-
-                <LinearLayout style="@style/LinearLayout_createjob">
-
-                    <TextView
-                        style="@style/Text_view"
-                        android:text="Description" />
-
-                    <TextView
-                        style="@style/Text_view1"
-                        android:text="Lighting Installation" />
-
-                </LinearLayout>
-
-                <LinearLayout style="@style/LinearLayout_createjob">
-
-                    <TextView
-                        style="@style/Text_view"
-                        android:text="Engineer" />
-
-                    <TextView
-                        style="@style/Text_view1"
                         android:text="Sam Miller" />
 
                 </LinearLayout>
 
+                <LinearLayout style="@style/LinearLayout_createjob">
+
+                    <TextView
+                        style="@style/Text_view"
+                        android:text="Activiry" />
+
+                    <TextView
+                        android:id="@+id/textAssetsName2"
+                        style="@style/Text_view1"
+                        android:text="Installation" />
+
+                </LinearLayout>
 
                 <LinearLayout style="@style/LinearLayout_createjob">
 
                     <TextView
                         style="@style/Text_view"
-                        android:text="Location" />
+                        android:text="Client Name" />
 
                     <TextView
-                        android:id="@+id/textTime"
+                        android:id="@+id/textResorce"
                         style="@style/Text_view1"
-                        android:text="West Berskhire" />
+                        android:text="Sorrin appartments" />
 
                 </LinearLayout>
+
+
+                <LinearLayout style="@style/LinearLayout_createjob">
+
+                    <TextView
+                        style="@style/Text_view"
+                        android:text="Work Time " />
+
+                    <TextView
+                        android:id="@+id/textOther"
+                        style="@style/Text_view1"
+                        android:text="4 hrs" />
+
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/LinearLayout_createjob">
+
+                    <TextView
+                        style="@style/Text_view"
+                        android:text="Date" />
+
+                    <TextView
+                        style="@style/Text_view1"
+                        android:text="15/05/2014" />
+
+                </LinearLayout>
+
+
+
 
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="50dp" />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:weightSum="2">
+
                 <Button
                     android:id="@+id/btnAssetsDetails"
-                    android:layout_width="250dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="20dp"
+
                     android:background="@drawable/ic_button"
-                    android:text="View assets details"
+                    android:text="Reject"
                     android:textAllCaps="false"
+                    android:layout_weight="1"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
 
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/ic_button"
+                        android:text="Approve"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
+                </LinearLayout>
             </LinearLayout>
 
 

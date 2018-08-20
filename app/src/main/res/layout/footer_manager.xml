@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".4"
+        android:orientation="horizontal"
+        android:background="@color/color_orange_Bg"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/imv_Home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_home" />
+
+        <ImageView
+            android:id="@+id/imv_Job"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_jobs"/>
+
+        <ImageView
+            android:id="@+id/imv_newJob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_newjob"/>
+
+        <ImageView
+            android:id="@+id/imv_Schedule"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_schedule"/>
+
+        <ImageView
+            android:id="@+id/imv_TimeSheet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_uero"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
