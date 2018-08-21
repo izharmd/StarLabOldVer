@@ -78,7 +78,7 @@ public class BillingStatusActivity extends AppCompatActivity {
                     imv_Job.setImageResource(R.mipmap.ic_jobs);
                     imv_Schedule.setImageResource(R.mipmap.ic_schedule_hover);
                     imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet);
-                    imv_newJob.setImageResource(R.mipmap.ic_newjob);
+                    imv_newJob.setImageResource(R.mipmap.ic_billing);
                 }
 
             }
@@ -99,7 +99,7 @@ public class BillingStatusActivity extends AppCompatActivity {
                     imv_Job.setImageResource(R.mipmap.ic_jobs_hover);
                     imv_Schedule.setImageResource(R.mipmap.ic_schedule);
                     imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet);
-                    imv_newJob.setImageResource(R.mipmap.ic_newjob);
+                    imv_newJob.setImageResource(R.mipmap.ic_billing);
                 }
 
             }
@@ -120,7 +120,7 @@ public class BillingStatusActivity extends AppCompatActivity {
                     imv_Job.setImageResource(R.mipmap.ic_jobs);
                     imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet_hover);
                     imv_Schedule.setImageResource(R.mipmap.ic_schedule);
-                    imv_newJob.setImageResource(R.mipmap.ic_newjob);
+                    imv_newJob.setImageResource(R.mipmap.ic_billing);
                 }
 
             }
@@ -141,7 +141,7 @@ public class BillingStatusActivity extends AppCompatActivity {
                     imv_Job.setImageResource(R.mipmap.ic_jobs);
                     imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet);
                     imv_Schedule.setImageResource(R.mipmap.ic_schedule);
-                    imv_newJob.setImageResource(R.mipmap.ic_newjob_hover);
+                    imv_newJob.setImageResource(R.mipmap.ic_billing_hover);
                 }
 
             }
@@ -155,7 +155,7 @@ public class BillingStatusActivity extends AppCompatActivity {
         imv_Job = (ImageView) findViewById(R.id.imv_Job);
         imv_Home = (ImageView) findViewById(R.id.imv_Home);
         imv_newJob = (ImageView) findViewById(R.id.imv_newJob);
-        imv_newJob.setImageResource(R.mipmap.ic_uero);
+        imv_newJob.setImageResource(R.mipmap.ic_billing_hover);
         imv_Schedule = (ImageView) findViewById(R.id.imv_Schedule);
         imv_TimeSheet = (ImageView) findViewById(R.id.imv_TimeSheet);
 

@@ -87,7 +87,7 @@ public class ViewJobsActivity extends AppCompatActivity {
                     imv_Job.setImageResource(R.mipmap.ic_jobs);
                     imv_Schedule.setImageResource(R.mipmap.ic_schedule_hover);
                     imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet);
-                    imv_newJob.setImageResource(R.mipmap.ic_newjob);
+                    imv_newJob.setImageResource(R.mipmap.ic_billing);
                 }
             }
         });
@@ -107,7 +107,7 @@ public class ViewJobsActivity extends AppCompatActivity {
                     imv_Job.setImageResource(R.mipmap.ic_jobs_hover);
                     imv_Schedule.setImageResource(R.mipmap.ic_schedule);
                     imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet);
-                    imv_newJob.setImageResource(R.mipmap.ic_newjob);
+                    imv_newJob.setImageResource(R.mipmap.ic_billing);
                 }
             }
         });
@@ -127,7 +127,7 @@ public class ViewJobsActivity extends AppCompatActivity {
                     imv_Job.setImageResource(R.mipmap.ic_jobs);
                     imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet_hover);
                     imv_Schedule.setImageResource(R.mipmap.ic_schedule);
-                    imv_newJob.setImageResource(R.mipmap.ic_newjob);
+                    imv_newJob.setImageResource(R.mipmap.ic_billing);
                 }
 
             }
@@ -148,7 +148,7 @@ public class ViewJobsActivity extends AppCompatActivity {
                     imv_Job.setImageResource(R.mipmap.ic_jobs);
                     imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet);
                     imv_Schedule.setImageResource(R.mipmap.ic_schedule);
-                    imv_newJob.setImageResource(R.mipmap.ic_newjob_hover);
+                    imv_newJob.setImageResource(R.mipmap.ic_billing_hover);
                 }
 
             }
@@ -173,7 +173,7 @@ public class ViewJobsActivity extends AppCompatActivity {
         textUserType.setText("Welcome Alex Johnson Logged in as:" + " " + Common.userType);
 
         if (Common.userType.equals("Service Manager")) {
-            imv_newJob.setImageResource(R.mipmap.ic_uero);
+            imv_newJob.setImageResource(R.mipmap.ic_billing);
         }
 
         myservice_recycler_view = (RecyclerView) findViewById(R.id.myservice_recycler_view);

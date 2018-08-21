@@ -90,7 +90,7 @@ public class ViewScheduleActivity extends AppCompatActivity {
                     imv_Job.setImageResource(R.mipmap.ic_jobs);
                     imv_Schedule.setImageResource(R.mipmap.ic_schedule_hover);
                     imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet);
-                    imv_newJob.setImageResource(R.mipmap.ic_newjob);
+                    imv_newJob.setImageResource(R.mipmap.ic_billing);
                 }
 
             }
@@ -111,7 +111,7 @@ public class ViewScheduleActivity extends AppCompatActivity {
                     imv_Job.setImageResource(R.mipmap.ic_jobs_hover);
                     imv_Schedule.setImageResource(R.mipmap.ic_schedule);
                     imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet);
-                    imv_newJob.setImageResource(R.mipmap.ic_newjob);
+                    imv_newJob.setImageResource(R.mipmap.ic_billing);
                 }
 
             }
@@ -132,7 +132,7 @@ public class ViewScheduleActivity extends AppCompatActivity {
                     imv_Job.setImageResource(R.mipmap.ic_jobs);
                     imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet_hover);
                     imv_Schedule.setImageResource(R.mipmap.ic_schedule);
-                    imv_newJob.setImageResource(R.mipmap.ic_newjob);
+                    imv_newJob.setImageResource(R.mipmap.ic_billing);
                 }
 
             }
@@ -153,7 +153,7 @@ public class ViewScheduleActivity extends AppCompatActivity {
                     imv_Job.setImageResource(R.mipmap.ic_jobs);
                     imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet);
                     imv_Schedule.setImageResource(R.mipmap.ic_schedule);
-                    imv_newJob.setImageResource(R.mipmap.ic_newjob_hover);
+                    imv_newJob.setImageResource(R.mipmap.ic_billing_hover);
                 }
 
             }

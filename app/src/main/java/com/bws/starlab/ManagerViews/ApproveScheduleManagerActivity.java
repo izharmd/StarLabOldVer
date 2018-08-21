@@ -84,7 +84,7 @@ public class ApproveScheduleManagerActivity extends AppCompatActivity {
                     imv_Job.setImageResource(R.mipmap.ic_jobs);
                     imv_Schedule.setImageResource(R.mipmap.ic_schedule_hover);
                     imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet);
-                    imv_newJob.setImageResource(R.mipmap.ic_newjob);
+                    imv_newJob.setImageResource(R.mipmap.ic_billing);
                 }
 
             }
@@ -105,7 +105,7 @@ public class ApproveScheduleManagerActivity extends AppCompatActivity {
                     imv_Job.setImageResource(R.mipmap.ic_jobs_hover);
                     imv_Schedule.setImageResource(R.mipmap.ic_schedule);
                     imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet);
-                    imv_newJob.setImageResource(R.mipmap.ic_newjob);
+                    imv_newJob.setImageResource(R.mipmap.ic_billing);
                 }
 
             }
@@ -126,7 +126,7 @@ public class ApproveScheduleManagerActivity extends AppCompatActivity {
                     imv_Job.setImageResource(R.mipmap.ic_jobs);
                     imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet_hover);
                     imv_Schedule.setImageResource(R.mipmap.ic_schedule);
-                    imv_newJob.setImageResource(R.mipmap.ic_newjob);
+                    imv_newJob.setImageResource(R.mipmap.ic_billing);
                 }
 
             }
@@ -147,7 +147,7 @@ public class ApproveScheduleManagerActivity extends AppCompatActivity {
                     imv_Job.setImageResource(R.mipmap.ic_jobs);
                     imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet);
                     imv_Schedule.setImageResource(R.mipmap.ic_schedule);
-                    imv_newJob.setImageResource(R.mipmap.ic_newjob_hover);
+                    imv_newJob.setImageResource(R.mipmap.ic_billing_hover);
                 }
             }
         });
@@ -167,6 +167,11 @@ public class ApproveScheduleManagerActivity extends AppCompatActivity {
         imv_TimeSheet = (ImageView) findViewById(R.id.imv_TimeSheet);
         textJob_header = (TextView) findViewById(R.id.textJob_header);
         textJob_header.setText("Approve Schedule Change");
+
+        if (Common.userType.equals("Service Manager")) {
+            imv_newJob.setImageResource(R.mipmap.ic_billing);
+        }
+
 
         TextView textUserType = (TextView) findViewById(R.id.textUserType);
         textUserType.setText("Welcome Alex Johnson Logged in as:" +" "+ Common.userType);
