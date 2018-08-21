@@ -19,7 +19,7 @@
             android:layout_height="30dp"
             android:text="Assets Required"
             android:background="@color/gray"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textColor="@color/white"
             android:layout_marginTop="10dp"
             android:gravity="center"/>

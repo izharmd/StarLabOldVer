@@ -15,28 +15,17 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/round_header"
         android:orientation="horizontal"
-        android:weightSum="4">
+        android:weightSum="3">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_weight=".8"
+            android:layout_weight="1"
+            android:drawableRight="@android:drawable/ic_menu_add"
             android:gravity="center"
-            android:text="Client"
+            android:text="Name"
             android:textColor="@color/white" />
-
-        <TextView
-
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="5dp"
-            android:layout_weight=".8"
-            android:gravity="center"
-            android:text="| Date"
-            android:textColor="@color/white" />
-
 
         <TextView
             android:layout_width="0dp"
@@ -44,41 +33,32 @@
             android:layout_gravity="center"
             android:layout_marginLeft="5dp"
             android:layout_weight="1"
+            android:drawableRight="@android:drawable/ic_menu_add"
             android:gravity="center"
-            android:text="| Description"
+            android:text="| Location"
             android:textColor="@color/white" />
 
         <TextView
-            android:id="@+id/btnAll"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="5dp"
-            android:layout_weight="1.4"
+            android:layout_weight="1"
+            android:drawableRight="@android:drawable/ic_menu_add"
             android:gravity="center"
-            android:text="| New Sechedule"
+            android:text="| Type"
             android:textColor="@color/white" />
 
     </LinearLayout>
 
-    <LinearLayout
-
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/myservice_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
-        android:clickable="true"
-        android:orientation="vertical"
-        android:weightSum="3">
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical" />
 
-        <android.support.v7.widget.RecyclerView
 
-            android:id="@+id/myservice_recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="10dp"
-            android:scrollbars="vertical" />
-
-    </LinearLayout>
 </LinearLayout>

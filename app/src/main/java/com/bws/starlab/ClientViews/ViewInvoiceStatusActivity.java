@@ -33,7 +33,6 @@ public class ViewInvoiceStatusActivity extends AppCompatActivity {
         setContentView(R.layout.activity_view_invoice_status);
 
         initView();
-
         clickEvent();
     }
 
@@ -55,13 +54,9 @@ public class ViewInvoiceStatusActivity extends AppCompatActivity {
         viewInvoice_recycler_view = (RecyclerView) findViewById(R.id.viewInvoice_recycler_view);
         viewInvoice_recycler_view.setHasFixedSize(true);
         viewInvoice_recycler_view.setLayoutManager(new LinearLayoutManager(this));
-
         Drawable dividerDrawable = ContextCompat.getDrawable(this, R.drawable.line_divider);
-
         viewInvoice_recycler_view.addItemDecoration(new DividerItemDecoration(dividerDrawable));
-
         arrayViewInVoice = new ArrayList<ViewInvoiceStatusModel>();
-
 
         for (int i = 0; i < 2; i++) {
             ViewInvoiceStatusModel viewInvoiceStatusModel = new ViewInvoiceStatusModel();

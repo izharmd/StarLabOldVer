@@ -16,10 +16,8 @@ import java.util.List;
 public class PriorityJobAdapter extends RecyclerView.Adapter<PriorityJobAdapter.ViewHolder> {
 
     private List<PriorityJobModel> list;
-
     public PriorityJobAdapter(List<PriorityJobModel> list) {
         this.list = list;
-
     }
 
     @Override
@@ -48,7 +46,6 @@ public class PriorityJobAdapter extends RecyclerView.Adapter<PriorityJobAdapter.
     public int getItemCount() {
         return list.size();
     }
-
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 

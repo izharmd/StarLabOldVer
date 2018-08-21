@@ -21,11 +21,9 @@ import java.util.List;
 public class ViewInvoiceAdapter extends RecyclerView.Adapter<ViewInvoiceAdapter.ViewHolder> {
 
     private List<ViewInvoiceStatusModel> list;
-    Context context;
 
     public ViewInvoiceAdapter(List<ViewInvoiceStatusModel> list) {
         this.list = list;
-
     }
 
     @Override

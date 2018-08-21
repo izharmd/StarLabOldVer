@@ -15,11 +15,8 @@ import com.google.android.gms.maps.SupportMapFragment;
  * Created by BWS on 20/08/2018.
  */
 
-public class ManagerAssentsDetailsFragment extends Fragment {
+public class ManagerAssetsDetailsFragment extends Fragment {
     View rootView;
-
-    FragmentManager fragmentManager;
-    Fragment fragment = null;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -28,14 +25,8 @@ public class ManagerAssentsDetailsFragment extends Fragment {
         initview();
         clickEvent();
 
-        FragmentManager manager = getFragmentManager();
-        FragmentTransaction transaction = manager.beginTransaction();
-        SupportMapFragment fragment = new SupportMapFragment();
-        transaction.commit();
-
         return rootView;
     }
-
 
     private void clickEvent() {
 

@@ -6,18 +6,13 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.bws.starlab.FragmentManagerView.ManagerAssentsDetailsFragment;
 import com.bws.starlab.ManagerViews.JobDetailsManagerActivity;
-import com.bws.starlab.ManagerViews.ViewJobsActivity;
 import com.bws.starlab.Models.ManagerViewJobModel;
 import com.bws.starlab.R;
 
@@ -30,14 +25,9 @@ import java.util.List;
 public class ManagerViewJobAdapter extends RecyclerView.Adapter<ManagerViewJobAdapter.ViewHolder> {
 
     private List<ManagerViewJobModel> list;
-    Context context;
 
-
-    public ManagerViewJobAdapter(List<ManagerViewJobModel> list, Context context) {
+    public ManagerViewJobAdapter(List<ManagerViewJobModel> list) {
         this.list = list;
-       // this.fragmentManager = fragmentManager;
-        this.context = context;
-
     }
 
     @Override
@@ -60,9 +50,6 @@ public class ManagerViewJobAdapter extends RecyclerView.Adapter<ManagerViewJobAd
         holder.textName.setText(myList.getName());
         holder.textLocation.setText(myList.getLocation());
         holder.textType.setText(myList.getType());
-
-
-
     }
 
     @Override
@@ -72,8 +59,6 @@ public class ManagerViewJobAdapter extends RecyclerView.Adapter<ManagerViewJobAd
 
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-
-
         public TextView textName;
         public TextView textLocation;
         public TextView textType;
@@ -97,35 +82,16 @@ public class ManagerViewJobAdapter extends RecyclerView.Adapter<ManagerViewJobAd
 
                     ManagerViewJobModel clickedDataItem = list.get(pos);
 
-                   /* fragment = new ManagerAssentsDetailsFragment();
-
-                    if (fragment != null) {
-                        fragmentManager =   ((FragmentActivity) context).getSupportFragmentManager();
-
-
-                        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
-
-                    }
-                    else {
-                        Toast.makeText(context,"rtyui",Toast.LENGTH_SHORT).show();
-                    }*/
-
-
-
-                   /* Bundle bundle = new Bundle();
+                    Bundle bundle = new Bundle();
                     bundle.putString("name", clickedDataItem.getName());
                     bundle.putString("location", clickedDataItem.getLocation());
                     bundle.putString("type", clickedDataItem.getType());
                     Intent intent = new Intent(v.getContext(), JobDetailsManagerActivity.class);
                     intent.putExtras(bundle);
                     v.getContext().startActivity(intent);
-                    ((Activity) v.getContext()).finish();*/
-
+                    ((Activity) v.getContext()).finish();
                 }
             });
-
-
         }
     }
-
 }

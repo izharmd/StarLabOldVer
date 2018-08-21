@@ -63,11 +63,9 @@ public class MyAccountActivity extends AppCompatActivity {
         imv_Shutdown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MyAccountActivity.this.finish();
-                Intent intent = new Intent(Intent.ACTION_MAIN);
-                intent.addCategory(Intent.CATEGORY_HOME);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
+                Intent i = new Intent(MyAccountActivity.this, LoginActivity.class);
+                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(i);
             }
         });
 
@@ -219,10 +217,6 @@ public class MyAccountActivity extends AppCompatActivity {
 
         imv_Shutdown = (ImageView) findViewById(R.id.imv_Shutdown);
 
-
-
-
-        imv_Shutdown = (ImageView) findViewById(R.id.imv_Shutdown);
         imv_header = (ImageView) findViewById(R.id.imv_header);
         imv_Job = (ImageView) findViewById(R.id.imv_Job);
         imv_Home = (ImageView) findViewById(R.id.imv_Home);

@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:text="Welcome Sam MillerLogged in as: Service Engineer"
             android:layout_gravity="center"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textColor="@color/color_orange_Bg"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"

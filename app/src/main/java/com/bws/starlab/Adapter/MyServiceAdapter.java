@@ -20,13 +20,10 @@ import java.util.List;
  */
 
 public class MyServiceAdapter extends RecyclerView.Adapter<MyServiceAdapter.ViewHolder> {
-
     private List<MyServiceModel> list;
-    Context context;
 
     public MyServiceAdapter(List<MyServiceModel> list) {
         this.list = list;
-
     }
 
     @Override
@@ -39,16 +36,11 @@ public class MyServiceAdapter extends RecyclerView.Adapter<MyServiceAdapter.View
     @Override
     public void onBindViewHolder(MyServiceAdapter.ViewHolder holder, int position) {
 
-        if(position %2 == 1)
-        {
+        if (position % 2 == 1) {
             holder.itemView.setBackgroundColor(Color.parseColor("#999999"));
-        }
-        else
-        {
+        } else {
             holder.itemView.setBackgroundColor(Color.parseColor("#cc7d3d"));
         }
-
-
         MyServiceModel myList = list.get(position);
         holder.textDate.setText(myList.getDate());
         holder.textDiscription.setText(myList.getDiscription());
@@ -61,10 +53,7 @@ public class MyServiceAdapter extends RecyclerView.Adapter<MyServiceAdapter.View
         return list.size();
     }
 
-
     public class ViewHolder extends RecyclerView.ViewHolder {
-
-
         public TextView textDate;
         public TextView textDiscription;
         public TextView textShedule;
@@ -79,5 +68,4 @@ public class MyServiceAdapter extends RecyclerView.Adapter<MyServiceAdapter.View
             textNew = (TextView) itemView.findViewById(R.id.textNew);
         }
     }
-
 }

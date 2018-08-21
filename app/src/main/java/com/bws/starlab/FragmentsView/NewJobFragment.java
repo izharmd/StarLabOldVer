@@ -37,12 +37,6 @@ public class NewJobFragment extends Fragment implements AdapterView.OnItemSelect
 
         initview();
         clickEvent();
-
-        FragmentManager manager = getFragmentManager();
-        FragmentTransaction transaction = manager.beginTransaction();
-        SupportMapFragment fragment = new SupportMapFragment();
-        transaction.commit();
-
         return rootView;
     }
 
@@ -78,10 +72,7 @@ public class NewJobFragment extends Fragment implements AdapterView.OnItemSelect
 
     private void initview() {
         btnAssetsDetails = rootView.findViewById(R.id.btnAssetsDetails);
-
         spinnerJobCode = rootView.findViewById(R.id.spinnerJobCode);
-
-
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), R.layout.spinner_item_job_code,arrJobCode);
         // adapter.setDropDownViewResource(android.R.layout.simple_list_item_single_choice);
         spinnerJobCode.setAdapter(adapter);

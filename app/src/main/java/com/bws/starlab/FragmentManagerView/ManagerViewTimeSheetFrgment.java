@@ -26,10 +26,6 @@ import java.util.List;
 
 public class ManagerViewTimeSheetFrgment extends Fragment {
     View rootView;
-
-    FragmentManager fragmentManager;
-    Fragment fragment = null;
-
     RecyclerView myservice_recycler_view;
     List<ManagerTimeSheet> arrManagerTimeSheet;
     private RecyclerView.Adapter mangViewJobAdapter;
@@ -40,8 +36,6 @@ public class ManagerViewTimeSheetFrgment extends Fragment {
 
         initview();
         clickEvent();
-
-
         return rootView;
     }
 
@@ -51,19 +45,12 @@ public class ManagerViewTimeSheetFrgment extends Fragment {
     }
 
     private void initview() {
-
-
-        myservice_recycler_view = (RecyclerView)rootView.findViewById(R.id.myservice_recycler_view);
+        myservice_recycler_view = (RecyclerView) rootView.findViewById(R.id.myservice_recycler_view);
         myservice_recycler_view.setHasFixedSize(true);
         myservice_recycler_view.setLayoutManager(new LinearLayoutManager(getContext()));
-
         Drawable dividerDrawable = ContextCompat.getDrawable(getContext(), R.drawable.line_divider);
-
         myservice_recycler_view.addItemDecoration(new DividerItemDecoration(dividerDrawable));
-
         arrManagerTimeSheet = new ArrayList<ManagerTimeSheet>();
-
-
         for (int i = 0; i < 3; i++) {
             ManagerTimeSheet managerViewJobModel = new ManagerTimeSheet();
             managerViewJobModel.setName("Sam");
@@ -72,12 +59,9 @@ public class ManagerViewTimeSheetFrgment extends Fragment {
             managerViewJobModel.setClientName("Sorrin Aptmnts");
             arrManagerTimeSheet.add(managerViewJobModel);
         }
-
         mangViewJobAdapter = new ManagerTimeSheetAdapter(arrManagerTimeSheet);
         myservice_recycler_view.setAdapter(mangViewJobAdapter);
     }
-
-
 }
 
 

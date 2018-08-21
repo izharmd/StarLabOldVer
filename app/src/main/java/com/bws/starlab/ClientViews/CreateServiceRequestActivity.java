@@ -1,13 +1,8 @@
 package com.bws.starlab.ClientViews;
-
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
-import com.bws.starlab.AssetsDetailsActivity;
-import com.bws.starlab.CreateJobActivity;
 import com.bws.starlab.R;
 
 public class CreateServiceRequestActivity extends AppCompatActivity {
@@ -40,9 +35,7 @@ public class CreateServiceRequestActivity extends AppCompatActivity {
 
 
     private void initView() {
-
         TextView textJob_header = (TextView) findViewById(R.id.textJob_header);
         textJob_header.setText("Create new service request");
-
     }
 }

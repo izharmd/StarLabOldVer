@@ -24,12 +24,6 @@ public class AssetsDetailsFragment extends Fragment {
 
         initview();
         clickEvent();
-
-        FragmentManager manager = getFragmentManager();
-        FragmentTransaction transaction = manager.beginTransaction();
-        SupportMapFragment fragment = new SupportMapFragment();
-        transaction.commit();
-
         return rootView;
     }
 

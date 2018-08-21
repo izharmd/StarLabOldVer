@@ -30,9 +30,6 @@ import java.util.List;
 public class ViewScheduleManagerFragment extends Fragment {
     View rootView;
 
-    FragmentManager fragmentManager;
-    Fragment fragment = null;
-
     RecyclerView myservice_recycler_view;
     List<ManagerViewSchedulModel> arrManagerViewSchedulModel;
     private RecyclerView.Adapter mangViewJobAdapter;
@@ -43,8 +40,6 @@ public class ViewScheduleManagerFragment extends Fragment {
 
         initview();
         clickEvent();
-
-
         return rootView;
     }
 
@@ -54,19 +49,12 @@ public class ViewScheduleManagerFragment extends Fragment {
     }
 
     private void initview() {
-
-
-        myservice_recycler_view = (RecyclerView)rootView.findViewById(R.id.myservice_recycler_view);
+        myservice_recycler_view = (RecyclerView) rootView.findViewById(R.id.myservice_recycler_view);
         myservice_recycler_view.setHasFixedSize(true);
         myservice_recycler_view.setLayoutManager(new LinearLayoutManager(getContext()));
-
         Drawable dividerDrawable = ContextCompat.getDrawable(getContext(), R.drawable.line_divider);
-
         myservice_recycler_view.addItemDecoration(new DividerItemDecoration(dividerDrawable));
-
         arrManagerViewSchedulModel = new ArrayList<ManagerViewSchedulModel>();
-
-
         for (int i = 0; i < 3; i++) {
             ManagerViewSchedulModel managerViewJobModel = new ManagerViewSchedulModel();
             managerViewJobModel.setClent("Sirius Tr");
@@ -75,11 +63,8 @@ public class ViewScheduleManagerFragment extends Fragment {
             managerViewJobModel.setNewShedule("4:30 p.m");
             arrManagerViewSchedulModel.add(managerViewJobModel);
         }
-
         mangViewJobAdapter = new ManagerViewSchedulAdapter(arrManagerViewSchedulModel);
         myservice_recycler_view.setAdapter(mangViewJobAdapter);
     }
-
-
 }
 

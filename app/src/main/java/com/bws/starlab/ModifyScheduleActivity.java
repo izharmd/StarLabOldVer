@@ -61,11 +61,9 @@ public class ModifyScheduleActivity extends AppCompatActivity {
         imv_Shutdown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ModifyScheduleActivity.this.finish();
-                Intent intent = new Intent(Intent.ACTION_MAIN);
-                intent.addCategory(Intent.CATEGORY_HOME);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
+                Intent i = new Intent(ModifyScheduleActivity.this, LoginActivity.class);
+                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(i);
             }
         });
 
@@ -216,10 +214,6 @@ public class ModifyScheduleActivity extends AppCompatActivity {
 
         textJob_header = (TextView) findViewById(R.id.textJob_header);
         textJob_header.setText("Schedule");
-
-
-
-        imv_Shutdown = (ImageView) findViewById(R.id.imv_Shutdown);
         imv_header = (ImageView) findViewById(R.id.imv_header);
         imv_Job = (ImageView) findViewById(R.id.imv_Job);
         imv_Home = (ImageView) findViewById(R.id.imv_Home);

@@ -69,12 +69,9 @@ public class DashboardActivity extends AppCompatActivity {
         imv_Shutdown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //System.exit(1);
-                DashboardActivity.this.finish();
-                Intent intent = new Intent(Intent.ACTION_MAIN);
-                intent.addCategory(Intent.CATEGORY_HOME);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
+                Intent i = new Intent(DashboardActivity.this, LoginActivity.class);
+                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(i);
             }
         });
     }

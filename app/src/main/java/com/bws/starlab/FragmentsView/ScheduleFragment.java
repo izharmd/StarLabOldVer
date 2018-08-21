@@ -56,20 +56,12 @@ public class ScheduleFragment extends Fragment {
     private RecyclerView.Adapter adapter;
 
     RecyclerView schedule_recycler_view;
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_schedule, container, false);
 
         initview();
         clickEvent();
-
-        FragmentManager manager = getFragmentManager();
-        FragmentTransaction transaction = manager.beginTransaction();
-        SupportMapFragment fragment = new SupportMapFragment();
-        transaction.commit();
-
         return rootView;
     }
 
@@ -79,7 +71,6 @@ public class ScheduleFragment extends Fragment {
         btnChangeSchedule.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 fragment = new ChangeScheduleFragment();
 
                 if (fragment != null) {
@@ -88,7 +79,6 @@ public class ScheduleFragment extends Fragment {
                 } else {
                     Toast.makeText(getContext(), "Error in creating fragment", Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
 
@@ -96,7 +86,6 @@ public class ScheduleFragment extends Fragment {
 
     private void initview() {
         btnChangeSchedule = rootView.findViewById(R.id.btnChangeSchedule);
-
         schedule_recycler_view = rootView.findViewById(R.id.schedule_recycler_view);
         schedule_recycler_view.setHasFixedSize(true);
         schedule_recycler_view.setLayoutManager(new LinearLayoutManager(getContext()));

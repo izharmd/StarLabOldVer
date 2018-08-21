@@ -19,6 +19,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
+
 import com.bws.starlab.R;
 import com.bws.starlab.Utils.DataParser;
 import com.bws.starlab.Utils.GPSTracker;
@@ -39,6 +40,7 @@ import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.maps.android.clustering.ClusterManager;
 
 import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -48,7 +50,9 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
 import com.google.android.gms.maps.OnMapReadyCallback;
+
 /**
  * Created by BWS on 08/05/2018.
  */
@@ -57,7 +61,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,
         LocationListener {
-    Button btnTabCustomerDetails,btnTabServiceDetails,btnTabPippeteDetails,btnTabLocation;
+    Button btnTabCustomerDetails, btnTabServiceDetails, btnTabPippeteDetails, btnTabLocation;
 
     View rootView;
     FragmentManager fragmentManager;
@@ -71,6 +75,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback,
     LocationRequest mLocationRequest;
     GPSTracker gps;
     LatLng currentLatLng;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_map, container, false);
@@ -103,82 +108,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback,
 
     private void clickEvent() {
 
-        btnTabCustomerDetails.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                fragment = new Step1_Fragment();
-
-                if (fragment != null) {
-                    fragmentManager = getFragmentManager();
-                    fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
-                    btnTabCustomerDetails.setBackgroundResource(R.drawable.ic_step_blue);
-                    btnTabServiceDetails.setBackgroundResource(R.drawable.ic_step_green);
-                    btnTabPippeteDetails.setBackgroundResource(R.drawable.ic_step_green);
-                    btnTabLocation.setBackgroundResource(R.drawable.ic_step_green);
-
-                } else {
-                    Toast.makeText(getContext(), "Error in creating fragment", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-
-        btnTabServiceDetails.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                fragment = new Step2_fragment();
-
-                if (fragment != null) {
-                    fragmentManager = getFragmentManager();
-                    fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
-                    btnTabCustomerDetails.setBackgroundResource(R.drawable.ic_step_green);
-                    btnTabServiceDetails.setBackgroundResource(R.drawable.ic_step_blue);
-                    btnTabPippeteDetails.setBackgroundResource(R.drawable.ic_step_green);
-                    btnTabLocation.setBackgroundResource(R.drawable.ic_step_green);
-                } else {
-                    Toast.makeText(getContext(), "Error in creating fragment", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-
-
-        btnTabPippeteDetails.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                fragment = new Step3_Fragment();
-
-                if (fragment != null) {
-                    fragmentManager = getFragmentManager();
-                    fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
-                    btnTabCustomerDetails.setBackgroundResource(R.drawable.ic_step_green);
-                    btnTabServiceDetails.setBackgroundResource(R.drawable.ic_step_green);
-                    btnTabPippeteDetails.setBackgroundResource(R.drawable.ic_step_blue);
-                    btnTabLocation.setBackgroundResource(R.drawable.ic_step_green);
-
-                } else {
-                    Toast.makeText(getContext(), "Error in creating fragment", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-
-        btnTabLocation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                fragment = new MapFragment();
-
-                if (fragment != null) {
-                    fragmentManager = getFragmentManager();
-                    fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
-                    btnTabCustomerDetails.setBackgroundResource(R.drawable.ic_step_green);
-                    btnTabServiceDetails.setBackgroundResource(R.drawable.ic_step_green);
-                    btnTabPippeteDetails.setBackgroundResource(R.drawable.ic_step_green);
-                    btnTabLocation.setBackgroundResource(R.drawable.ic_step_blue);
-
-                } else {
-                    Toast.makeText(getContext(), "Error in creating fragment", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
     }
 
     private void initView() {
@@ -188,10 +117,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback,
         btnTabPippeteDetails = rootView.findViewById(R.id.btnTabPippeteDetails);
         btnTabLocation = rootView.findViewById(R.id.btnTabLocation);
 
-        btnTabCustomerDetails.setBackgroundResource(R.drawable.ic_step_green);
-        btnTabServiceDetails.setBackgroundResource(R.drawable.ic_step_green);
-        btnTabPippeteDetails.setBackgroundResource(R.drawable.ic_step_green);
-        btnTabLocation.setBackgroundResource(R.drawable.ic_step_blue);
     }
 
 
@@ -206,8 +131,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback,
                 buildGoogleApiClient();
                 mMap.setMyLocationEnabled(true);
             }
-        }
-        else {
+        } else {
             buildGoogleApiClient();
             mMap.setMyLocationEnabled(true);
         }
@@ -225,7 +149,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback,
         //Place current location marker
         LatLng latLng = new LatLng(gps.getLatitude(), gps.getLongitude());
 
-        LatLng dest = new LatLng(22.5851,88.3468);
+        LatLng dest = new LatLng(22.5851, 88.3468);
 
         String url = getUrl(currentLatLng, dest);
         Log.d("onMapClick", url.toString());
@@ -238,8 +162,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback,
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(11));
 
-        mMap.addMarker(new MarkerOptions().position(new LatLng(gps.getLatitude(),gps.getLongitude())).title("Current Position"));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(22.5851,88.3468)).title("Destination"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(gps.getLatitude(), gps.getLongitude())).title("Current Position"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(22.5851, 88.3468)).title("Destination"));
     }
 
     private String getUrl(LatLng origin, LatLng dest) {
@@ -353,23 +277,23 @@ public class MapFragment extends Fragment implements OnMapReadyCallback,
 
             try {
                 jObject = new JSONObject(jsonData[0]);
-                Log.d("ParserTask",jsonData[0].toString());
+                Log.d("ParserTask", jsonData[0].toString());
                 DataParser parser = new DataParser();
                 Log.d("ParserTask", parser.toString());
 
                 // Starts parsing data
                 routes = parser.parse(jObject);
-                Log.d("ParserTask","Executing routes");
-                Log.d("ParserTask",routes.toString());
+                Log.d("ParserTask", "Executing routes");
+                Log.d("ParserTask", routes.toString());
 
                 String distance = jObject.getJSONArray("routes").getJSONObject(0).getJSONArray("legs").getJSONObject(0).getJSONObject("distance").getString("text");
 
-                Log.d("distance======",distance);
-                String  duration = jObject.getJSONArray("routes").getJSONObject(0).getJSONArray("legs").getJSONObject(0).getJSONObject("duration").getString("text");
-                Log.d("duration",duration);
+                Log.d("distance======", distance);
+                String duration = jObject.getJSONArray("routes").getJSONObject(0).getJSONArray("legs").getJSONObject(0).getJSONObject("duration").getString("text");
+                Log.d("duration", duration);
 
             } catch (Exception e) {
-                Log.d("ParserTask",e.toString());
+                Log.d("ParserTask", e.toString());
                 e.printStackTrace();
             }
             return routes;
@@ -404,16 +328,15 @@ public class MapFragment extends Fragment implements OnMapReadyCallback,
                 lineOptions.width(10);
                 lineOptions.color(Color.RED);
 
-                Log.d("onPostExecute","onPostExecute lineoptions decoded");
+                Log.d("onPostExecute", "onPostExecute lineoptions decoded");
 
             }
 
             // Drawing polyline in the Google Map for the i-th route
-            if(lineOptions != null) {
+            if (lineOptions != null) {
                 mMap.addPolyline(lineOptions);
-            }
-            else {
-                Log.d("onPostExecute","without Polylines drawn");
+            } else {
+                Log.d("onPostExecute", "without Polylines drawn");
             }
         }
     }
@@ -488,7 +411,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback,
     }
 
     public static final int MY_PERMISSIONS_REQUEST_LOCATION = 99;
-    public boolean checkLocationPermission(){
+
+    public boolean checkLocationPermission() {
         if (ContextCompat.checkSelfPermission(getContext(),
                 Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {

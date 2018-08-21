@@ -7,8 +7,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,11 +14,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bws.starlab.FragmentManagerView.ManagerAssentsDetailsFragment;
+import com.bws.starlab.FragmentManagerView.ManagerAssetsDetailsFragment;
 import com.bws.starlab.ManagerViews.ApproveScheduleManagerActivity;
-import com.bws.starlab.ManagerViews.JobDetailsManagerActivity;
-import com.bws.starlab.ManagerViews.ViewJobsActivity;
-import com.bws.starlab.Models.ManagerViewJobModel;
 import com.bws.starlab.Models.ManagerViewSchedulModel;
 import com.bws.starlab.R;
 
@@ -31,14 +26,10 @@ import java.util.List;
  */
 
 public class ManagerViewSchedulAdapter extends RecyclerView.Adapter<ManagerViewSchedulAdapter.ViewHolder> {
-    FragmentManager fragmentManager;
-    Fragment fragment = null;
     private List<ManagerViewSchedulModel> list;
-    Context context;
 
     public ManagerViewSchedulAdapter(List<ManagerViewSchedulModel> list) {
         this.list = list;
-
     }
 
     @Override
@@ -51,15 +42,11 @@ public class ManagerViewSchedulAdapter extends RecyclerView.Adapter<ManagerViewS
     @Override
     public void onBindViewHolder(ManagerViewSchedulAdapter.ViewHolder holder, int position) {
 
-        if(position %2 == 1)
-        {
+        if (position % 2 == 1) {
             holder.itemView.setBackgroundColor(Color.parseColor("#999999"));
-        }
-        else
-        {
+        } else {
             holder.itemView.setBackgroundColor(Color.parseColor("#cc7d3d"));
         }
-
 
         ManagerViewSchedulModel myList = list.get(position);
         holder.textClient.setText(myList.getClent());
@@ -75,8 +62,6 @@ public class ManagerViewSchedulAdapter extends RecyclerView.Adapter<ManagerViewS
 
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-
-
         public TextView textClient;
         public TextView textDate;
         public TextView textDiscription;
@@ -84,12 +69,10 @@ public class ManagerViewSchedulAdapter extends RecyclerView.Adapter<ManagerViewS
 
         public ViewHolder(final View itemView) {
             super(itemView);
-
             textClient = (TextView) itemView.findViewById(R.id.textClient);
             textDate = (TextView) itemView.findViewById(R.id.textDate);
             textDiscription = (TextView) itemView.findViewById(R.id.textDiscription);
             textNewSchedule = (TextView) itemView.findViewById(R.id.textNewSchedule);
-
 
             // on item click
             itemView.setOnClickListener(new View.OnClickListener() {
@@ -100,31 +83,7 @@ public class ManagerViewSchedulAdapter extends RecyclerView.Adapter<ManagerViewS
                     if (pos == pos) {
                         // itemView.setBackgroundColor(ContextCompat.getColor(v.getContext(), R.color.winter));
                     }
-
                     ManagerViewSchedulModel clickedDataItem = list.get(pos);
-
-                    fragment = new ManagerAssentsDetailsFragment();
-
-                    if (fragment != null) {
-
-                       // Fragment fragment = new YourFragment();
-                        //fragmentManager = (AppCompatActivity)context.getSupportFragmentManager();
-                        //fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
-//                        imv_Home.setEnabled(false);
-//                        imv_Job.setEnabled(true);
-//                        imv_newJob.setEnabled(true);
-//                        imv_Schedule.setEnabled(true);
-//                        imv_TimeSheet.setEnabled(true);
-//                        textJob_header.setText("Job details");
-//                        imv_header.setImageResource(R.mipmap.ic_jobs);
-//                        imv_Job.setImageResource(R.mipmap.ic_jobs_hover);
-//                        imv_Schedule.setImageResource(R.mipmap.ic_schedule);
-                    }
-                    else {
-                        Toast.makeText(context,"rtyui",Toast.LENGTH_SHORT).show();
-                    }
-
-
                     Bundle bundle = new Bundle();
                     bundle.putString("name", clickedDataItem.getClent());
                     bundle.putString("location", clickedDataItem.getDate());
@@ -139,5 +98,4 @@ public class ManagerViewSchedulAdapter extends RecyclerView.Adapter<ManagerViewS
             });
         }
     }
-
 }
