@@ -20,7 +20,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="BillingCode"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/textTime"
@@ -30,7 +30,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="| Time"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
 
         <TextView
@@ -41,7 +41,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="| Rate"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/textTotal"
@@ -51,7 +51,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="| Total"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/textClient"
@@ -61,7 +61,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="| Cleint"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
     </LinearLayout>
 
