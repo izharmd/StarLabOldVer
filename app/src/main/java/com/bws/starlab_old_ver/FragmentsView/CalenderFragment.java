@@ -68,11 +68,6 @@ public class CalenderFragment extends Fragment implements OnClickListener{
         initview();
         clickEvent();
 
-        FragmentManager manager = getFragmentManager();
-        FragmentTransaction transaction = manager.beginTransaction();
-        SupportMapFragment fragment = new SupportMapFragment();
-        transaction.commit();
-
          dayOfMonth1 = getArguments().getInt("dayOfMonth1");
          dayOfMonth2 = getArguments().getInt("dayOfMonth2");
          setecteddate = dayOfMonth2 - dayOfMonth1;

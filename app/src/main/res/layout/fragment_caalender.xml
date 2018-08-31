@@ -2,7 +2,6 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="10dp"
     android:background="@color/white"
     android:clickable="true"
     android:orientation="vertical">
@@ -11,7 +10,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@color/lightgray"
+        android:background="@color/white"
         android:orientation="vertical" >
 
         <TextView
@@ -20,30 +19,19 @@
             android:layout_height="wrap_content"
             android:paddingLeft="20dp"
             android:text="Employee id : #00036"
-            android:textSize="20sp"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
             android:textColor="@color/color_orange_Bg"/>
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp"
-            android:text="Timesheet details"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:background="@color/gray"
-            android:textColor="@color/white"/>
 
         <LinearLayout
             android:id="@+id/buttonlayout"
             android:layout_width="fill_parent"
-            android:layout_height="40sp"
-            android:background="@drawable/topbar"
-            android:gravity="left|top"
-            android:height="60sp"
+            android:layout_height="40dp"
+            android:background="@color/color_orange_Bg"
             android:orientation="horizontal"
+            android:layout_marginTop="10dp"
             android:visibility="visible">
 
             <Button
@@ -116,7 +104,7 @@
                 android:text="SUN"
                 android:textColor="@color/black"
                 android:gravity="center"
-                android:textSize="18sp"/>
+                android:textSize="16sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -124,7 +112,7 @@
                 android:text="MON"
                 android:textColor="@color/black"
                 android:gravity="center"
-                android:textSize="18sp"/>
+                android:textSize="16sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -132,7 +120,7 @@
                 android:text="TUE"
                 android:textColor="@color/black"
                 android:gravity="center"
-                android:textSize="20sp"/>
+                android:textSize="16sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -140,7 +128,7 @@
                 android:text="WED"
                 android:textColor="@color/black"
                 android:gravity="center"
-                android:textSize="20sp"/>
+                android:textSize="16sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -148,7 +136,7 @@
                 android:text="THU"
                 android:textColor="@color/black"
                 android:gravity="center"
-                android:textSize="20sp"/>
+                android:textSize="16sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -156,7 +144,7 @@
                 android:text="FRI"
                 android:textColor="@color/black"
                 android:gravity="center"
-                android:textSize="20sp"/>
+                android:textSize="16sp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -164,7 +152,7 @@
                 android:text="SAT"
                 android:textColor="@color/black"
                 android:gravity="center"
-                android:textSize="20sp"/>
+                android:textSize="16sp"/>
 
 
         </LinearLayout>

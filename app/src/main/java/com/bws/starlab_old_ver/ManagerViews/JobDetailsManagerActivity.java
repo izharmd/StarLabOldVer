@@ -53,7 +53,7 @@ public class JobDetailsManagerActivity extends AppCompatActivity {
                     fragmentManager = getSupportFragmentManager();
                     fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
                     textJob_header.setText("Assets Details");
-                    imv_header.setImageResource(R.mipmap.ic_jobs);
+                    imv_header.setImageResource(R.mipmap.ic_view_job);
                     imv_Job.setImageResource(R.drawable.ic_jobs_hover);
                 }
             }
@@ -78,7 +78,7 @@ public class JobDetailsManagerActivity extends AppCompatActivity {
         imv_Home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                imv_Home.setImageResource(R.mipmap.ic_home_hover);
+               // imv_Home.setImageResource(R.mipmap.ic_home_hover);
                 Intent i = new Intent(JobDetailsManagerActivity.this, DashBoardManagerActivity.class);
                 startActivity(i);
                 finish();
@@ -94,7 +94,7 @@ public class JobDetailsManagerActivity extends AppCompatActivity {
                     fragmentManager = getSupportFragmentManager();
                     fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
                     textJob_header.setText("View  Schedule Change");
-                    imv_header.setImageResource(R.mipmap.ic_jobs);
+                    imv_header.setImageResource(R.mipmap.ic_view_schedule);
                     imv_Home.setImageResource(R.mipmap.ic_home);
                     imv_Job.setImageResource(R.mipmap.ic_jobs);
                     imv_Schedule.setImageResource(R.mipmap.ic_schedule_hover);
@@ -113,7 +113,7 @@ public class JobDetailsManagerActivity extends AppCompatActivity {
                     fragmentManager = getSupportFragmentManager();
                     fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
                     textJob_header.setText("Job details");
-                    imv_header.setImageResource(R.mipmap.ic_jobs);
+                    imv_header.setImageResource(R.mipmap.ic_view_job);
                     imv_Home.setImageResource(R.mipmap.ic_home);
                     imv_Job.setImageResource(R.mipmap.ic_jobs_hover);
                     imv_Schedule.setImageResource(R.mipmap.ic_schedule);
@@ -131,7 +131,7 @@ public class JobDetailsManagerActivity extends AppCompatActivity {
                     fragmentManager = getSupportFragmentManager();
                     fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
                     textJob_header.setText("View Billing");
-                    imv_header.setImageResource(R.mipmap.ic_jobs);
+                    imv_header.setImageResource(R.mipmap.ic_view_billing);
                     imv_Home.setImageResource(R.mipmap.ic_home);
                     imv_Job.setImageResource(R.mipmap.ic_jobs);
                     imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet);
@@ -151,7 +151,7 @@ public class JobDetailsManagerActivity extends AppCompatActivity {
                     fragmentManager = getSupportFragmentManager();
                     fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
                     textJob_header.setText("View timesheet approvals");
-                    imv_header.setImageResource(R.mipmap.ic_jobs);
+                    imv_header.setImageResource(R.mipmap.ic_view_job);
                     imv_Home.setImageResource(R.mipmap.ic_home);
                     imv_Job.setImageResource(R.mipmap.ic_jobs);
                     imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet_hover);
@@ -167,6 +167,7 @@ public class JobDetailsManagerActivity extends AppCompatActivity {
         //Image views
         imv_Shutdown = (ImageView) findViewById(R.id.imv_Shutdown);
         imv_header = (ImageView) findViewById(R.id.imv_header);
+        imv_header.setImageResource(R.mipmap.ic_view_job);
         imv_Job = (ImageView) findViewById(R.id.imv_Job);
         imv_Job.setImageResource(R.mipmap.ic_jobs_hover);
         imv_Home = (ImageView) findViewById(R.id.imv_Home);
