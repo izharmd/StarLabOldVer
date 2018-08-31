@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.bws.starlab.LoginActivity">
+    tools:context="com.bws.starlab_old_ver.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

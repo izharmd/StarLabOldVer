@@ -90,7 +90,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight=".6"
-            android:src="@mipmap/ic_create_job" />
+            android:src="@mipmap/ic_my_account" />
 
         <TextView
             style="@style/dashboard_logo_Text"

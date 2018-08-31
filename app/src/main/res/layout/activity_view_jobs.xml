@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="3"
-    tools:context="com.bws.starlab.MyJobActivity">
+    tools:context="com.bws.starlab_old_ver.MyJobActivity">
 
     <include
         layout="@layout/header_username_activity"
@@ -49,7 +49,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:drawableRight="@mipmap/ic_filter"
+                    android:drawableRight="@drawable/ic_filter"
                     android:gravity="center"
                     android:text="Name"
                     android:textColor="@color/white" />
@@ -60,7 +60,7 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
                     android:layout_weight="1"
-                    android:drawableRight="@android:drawable/ic_menu_add"
+                    android:drawableRight="@drawable/ic_filter"
                     android:gravity="center"
                     android:text="| Location"
                     android:textColor="@color/white" />
@@ -71,7 +71,7 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
                     android:layout_weight="1"
-                    android:drawableRight="@android:drawable/ic_menu_add"
+                    android:drawableRight="@drawable/ic_filter"
                     android:gravity="center"
                     android:text="| Type"
                     android:textColor="@color/white" />

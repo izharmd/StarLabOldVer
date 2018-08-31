@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="3"
-    tools:context="com.bws.starlab.MyJobActivity">
+    tools:context="com.bws.starlab_old_ver.MyJobActivity">
 
     <include
         layout="@layout/header_username_activity"

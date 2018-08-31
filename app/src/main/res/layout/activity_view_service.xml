@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context="com.bws.starlab_old_ver.MyJobActivity">
+
+    <include
+        layout="@layout/header_username_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <include
+        layout="@layout/header_activity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp" />
+
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.7"
+                android:orientation="vertical"
+                android:weightSum="20">
+
+                <LinearLayout style="@style/LinearLayout_createjob">
+
+                    <TextView
+                        style="@style/Text_view"
+                        android:text="Job Name" />
+
+                    <TextView
+                        android:id="@+id/textAssetsName1"
+                        style="@style/Text_view1"
+                        android:text="Service Maintenance" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayout_createjob">
+
+                    <TextView
+                        style="@style/Text_view"
+                        android:text="Engineer" />
+
+                    <TextView
+                        android:id="@+id/textAssetsName2"
+                        style="@style/Text_view1"
+                        android:text="Sam Miller" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayout_createjob">
+
+                    <TextView
+                        style="@style/Text_view"
+                        android:text="Date" />
+
+                    <TextView
+                        android:id="@+id/textResorce"
+                        style="@style/Text_view1"
+                        android:text="15 May 2014" />
+
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/LinearLayout_createjob">
+
+                    <TextView
+                        style="@style/Text_view"
+                        android:text="Scheduled Time" />
+
+                    <TextView
+                        android:id="@+id/textOther"
+                        style="@style/Text_view1"
+                        android:text="2:30 p.m" />
+
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/LinearLayout_createjob">
+
+                    <TextView
+                        style="@style/Text_view"
+                        android:text="New Time" />
+
+                    <TextView
+                        style="@style/Text_view1"
+                        android:text="4:30 p.m" />
+
+                </LinearLayout>
+
+
+
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:background="@drawable/round_button_gray"
+                        android:text="Accept new schedule"
+                        android:textAllCaps="false"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:weightSum="3">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:background="@drawable/round_button_gray"
+                        android:text="Request for new resource"
+                        android:textAllCaps="false"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <include
+        layout="@layout/footer_client_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3"
+        android:background="@color/color_orange_Bg" />
+
+
+</LinearLayout>

@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight=".6"
-            android:src="@mipmap/ic_modify_schedule" />
+            android:src="@mipmap/ic_view_nvoice" />
 
         <TextView
             style="@style/dashboard_logo_Text"
@@ -63,14 +63,16 @@
 
     <View style="@style/dashboard_View"></View>
 
-    <LinearLayout style="@style/dashboard_LinerLayout">
+    <LinearLayout
+        android:id="@+id/ll_MyAccount_Client"
+        style="@style/dashboard_LinerLayout">
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight=".6"
-            android:src="@mipmap/ic_create_job" />
+            android:src="@mipmap/ic_my_account" />
 
         <TextView
             style="@style/dashboard_logo_Text"

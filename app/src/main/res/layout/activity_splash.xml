@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/starlab_splash"
-
-    tools:context="com.bws.starlab.SplashActivity">
+    tools:context="com.bws.starlab_old_ver.SplashActivity">
 
 </LinearLayout>

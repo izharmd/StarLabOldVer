@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.bws.starlab"
+        applicationId "com.bws.starlab_old_ver"
         minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
@@ -15,6 +15,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
     }
 }
 
@@ -48,5 +52,8 @@ dependencies {
     // this line must be included to integrate with Firebase
     compile 'com.google.firebase:firebase-messaging:10.2.1'
     compile 'com.github.f0ris.sweetalert:library:1.5.1'
+    implementation 'com.github.WindSekirun:SectionCalendarView:1.0.5.1'
+    compile 'com.github.MorochoRochaDarwin:OneCalendarView:3.1.1'
+
 }
 apply plugin: 'com.google.gms.google-services'

@@ -9,38 +9,41 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight=".4"
-        android:orientation="horizontal"
         android:background="@color/color_orange_Bg"
+        android:orientation="horizontal"
         android:weightSum="4">
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:src="@mipmap/ic_home"/>
-
-
 
         <ImageView
+            android:id="@+id/imv_home_client"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_gravity="center"
-            android:src="@mipmap/ic_newjob"/>
+            android:layout_weight="1"
+            android:src="@mipmap/ic_home" />
 
         <ImageView
+            android:id="@+id/imv_service"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_gravity="center"
-            android:src="@mipmap/ic_schedule"/>
+            android:layout_weight="1"
+            android:src="@mipmap/ic_service" />
 
         <ImageView
+            android:id="@+id/imv_createService"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_gravity="center"
-            android:src="@mipmap/ic_timesheet"/>
+            android:layout_weight="1"
+            android:src="@mipmap/ic_create_service" />
+
+        <ImageView
+            android:id="@+id/imv_invoice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_invoice" />
 
     </LinearLayout>
 

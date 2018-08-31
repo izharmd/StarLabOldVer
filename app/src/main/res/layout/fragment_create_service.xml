@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:clickable="true"
+    android:weightSum="3">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20">
+
+        <LinearLayout style="@style/LinearLayout_createjob">
+
+            <TextView
+                style="@style/Text_view"
+                android:text="Service" />
+
+            <TextView
+                android:id="@+id/textAssetsName1"
+                style="@style/Text_view2"
+                android:layout_gravity="center|left"
+                android:text="Maintenance" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout_createjob">
+
+            <TextView
+                style="@style/Text_view"
+                android:text="Category" />
+
+            <TextView
+                android:id="@+id/textAssetsName2"
+                style="@style/Text_view2"
+                android:layout_gravity="center|left"
+                android:text="Hall Lighting" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout_createjob">
+
+            <TextView
+                style="@style/Text_view"
+                android:text="Description" />
+
+            <TextView
+                android:id="@+id/textResorce"
+                style="@style/Text_view2"
+                android:layout_gravity="center|left"
+                android:text="Schedule maintenance" />
+
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/LinearLayout_createjob">
+
+            <TextView
+                style="@style/Text_view"
+                android:text="Priority" />
+
+            <TextView
+                android:id="@+id/textOther"
+                style="@style/Text_view2"
+                android:layout_gravity="center|left"
+                android:text="Normal" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout_createjob">
+
+            <TextView
+                style="@style/Text_view"
+                android:text="Date" />
+
+            <TextView
+                android:id="@+id/textTime"
+                style="@style/Text_view2"
+                android:layout_gravity="center|left"
+                android:text="19 May 2014" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout_createjob">
+
+            <TextView
+                style="@style/Text_view"
+                android:text="Location" />
+
+            <TextView
+                android:id="@+id/textLocation"
+                style="@style/Text_view2"
+                android:layout_gravity="center|left"
+                android:text="West Berkshire" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnCreateService"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_weight="1"
+                android:background="@drawable/ic_button"
+                android:text="Create Service"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_button"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
