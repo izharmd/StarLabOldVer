@@ -51,8 +51,8 @@ public class ManagerViewJobFragment extends Fragment {
         arrManViewJob = new ArrayList<ManagerViewJobModel>();
         for (int i = 0; i < 3; i++) {
             ManagerViewJobModel managerViewJobModel = new ManagerViewJobModel();
-            managerViewJobModel.setName("Md Izhar");
-            managerViewJobModel.setLocation("Kolkata");
+            managerViewJobModel.setName("John");
+            managerViewJobModel.setLocation("London");
             managerViewJobModel.setType("Installation");
             arrManViewJob.add(managerViewJobModel);
         }

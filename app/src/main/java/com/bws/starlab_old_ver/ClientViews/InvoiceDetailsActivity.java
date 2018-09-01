@@ -54,8 +54,8 @@ public class InvoiceDetailsActivity extends AppCompatActivity {
         imv_home_client.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(InvoiceDetailsActivity.this, DashBoardClientActivity.class);
-                startActivity(intent);
+               // Intent intent = new Intent(InvoiceDetailsActivity.this, DashBoardClientActivity.class);
+               // startActivity(intent);
                 finish();
             }
         });
@@ -123,6 +123,7 @@ public class InvoiceDetailsActivity extends AppCompatActivity {
     }
 
     private void initView() {
+
         //Image views
         imv_Shutdown = (ImageView) findViewById(R.id.imv_Shutdown);
         imv_header = (ImageView) findViewById(R.id.imv_header);

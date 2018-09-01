@@ -56,8 +56,8 @@ public class BillingStatusActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //imv_Home.setImageResource(R.mipmap.ic_home_hover);
-                Intent i = new Intent(BillingStatusActivity.this, DashBoardManagerActivity.class);
-                startActivity(i);
+                //Intent i = new Intent(BillingStatusActivity.this, DashBoardManagerActivity.class);
+               // startActivity(i);
                 finish();
             }
         });

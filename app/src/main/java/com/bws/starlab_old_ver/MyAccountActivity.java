@@ -215,6 +215,8 @@ public class MyAccountActivity extends AppCompatActivity {
         imv_Shutdown = (ImageView) findViewById(R.id.imv_Shutdown);
 
         imv_header = (ImageView) findViewById(R.id.imv_header);
+
+        imv_header.setImageResource(R.mipmap.ic_view_job);
         imv_Job = (ImageView) findViewById(R.id.imv_Job);
         imv_Home = (ImageView) findViewById(R.id.imv_Home);
 

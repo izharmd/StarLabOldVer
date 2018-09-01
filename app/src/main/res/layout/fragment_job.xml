@@ -69,7 +69,6 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_height="70dp"
             style="@style/LinearLayout_createjob">
 
             <TextView
@@ -79,7 +78,7 @@
 
             <TextView
                 android:id="@+id/textDiscription"
-                android:layout_height="70dp"
+                android:layout_height="wrap_content"
                 android:text="Installation of complete lighting solutions for 1st floor"
                 android:layout_gravity="left"
                 style="@style/Text_view1"/>

@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.bws.starlab_old_ver.ClientFragment.CreateServiceFragment;
 import com.bws.starlab_old_ver.ClientFragment.MyServiceFragment;
 import com.bws.starlab_old_ver.ClientFragment.ViewInvoiceFragment;
+import com.bws.starlab_old_ver.Commons.Common;
 import com.bws.starlab_old_ver.DashBoardClientActivity;
 import com.bws.starlab_old_ver.Models.MyServiceModel;
 import com.bws.starlab_old_ver.MyServiceActivity;
@@ -60,8 +61,8 @@ public class CreateServiceRequestActivity extends AppCompatActivity {
         imv_home_client.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CreateServiceRequestActivity.this, DashBoardClientActivity.class);
-                startActivity(intent);
+                //Intent intent = new Intent(CreateServiceRequestActivity.this, DashBoardClientActivity.class);
+               // startActivity(intent);
                 finish();
             }
         });
@@ -129,6 +130,9 @@ public class CreateServiceRequestActivity extends AppCompatActivity {
 
 
     private void initView() {
+
+        TextView textUserType = (TextView) findViewById(R.id.textUserType);
+        textUserType.setText("Welcome Alex Johnson Logged in as:" +" "+ Common.userType);
 
         imv_home_client = (ImageView) findViewById(R.id.imv_home_client);
         imv_service = (ImageView) findViewById(R.id.imv_service);

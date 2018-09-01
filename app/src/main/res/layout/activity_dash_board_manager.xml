@@ -31,7 +31,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="2.4"
+                android:layout_weight="2.6"
                 android:gravity="center"
                 android:text="My Dashboard"
                 android:textStyle="bold"
@@ -42,7 +42,7 @@
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="50dp"
-                android:layout_weight=".6"
+                android:layout_weight=".4"
                 android:layout_gravity="center"
                 android:src="@mipmap/ic_dashboard" />
 
@@ -77,7 +77,7 @@
                 android:layout_weight="3.5"
                 android:paddingLeft="10dp"
                 android:textStyle="bold"
-                android:text="Strategic Installation- Sorrin Appartments"
+                android:text="Manage schedule- Sirius trading"
                 android:textColor="@color/colorBlack" />
 
             <ImageView
@@ -105,7 +105,7 @@
                 android:layout_weight="3.5"
                 android:paddingLeft="10dp"
                 android:textStyle="bold"
-                android:text="Schedule Maintenance- Candice store"
+                android:text="Approve timesheet- Sam Miller"
                 android:textColor="@color/colorBlack" />
 
             <ImageView
@@ -133,7 +133,7 @@
                 android:layout_weight="3.5"
                 android:paddingLeft="10dp"
                 android:textStyle="bold"
-                android:text="Service Timesheet- Europa Logistics"
+                android:text="Invoice creation- Sorrin appartments"
                 android:textColor="@color/colorBlack" />
 
             <ImageView

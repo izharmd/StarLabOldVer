@@ -35,7 +35,7 @@
             android:layout_weight="1"
             android:drawableRight="@drawable/ic_filter"
             android:gravity="center"
-            android:text="| Location"
+            android:text="Location"
             android:textColor="@color/white" />
 
         <TextView
@@ -46,7 +46,8 @@
             android:layout_weight="1"
             android:drawableRight="@drawable/ic_filter"
             android:gravity="center"
-            android:text="| Type"
+            android:text="Type"
+            android:paddingRight="10dp"
             android:textColor="@color/white" />
 
     </LinearLayout>

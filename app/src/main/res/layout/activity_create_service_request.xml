@@ -51,6 +51,12 @@
 
             </LinearLayout>
 
+
+
+
+
+
+
             <LinearLayout style="@style/LinearLayout_createjob">
 
                 <TextView
@@ -60,6 +66,7 @@
                 <TextView
                     android:id="@+id/textAssetsName2"
                     style="@style/Text_view2"
+                    android:layout_gravity="center|left"
                     android:text="Hall Lighting" />
 
             </LinearLayout>
@@ -73,6 +80,7 @@
                 <TextView
                     android:id="@+id/textResorce"
                     style="@style/Text_view2"
+                    android:layout_gravity="center|left"
                     android:text="Schedule maintenance" />
 
             </LinearLayout>
@@ -87,6 +95,7 @@
                 <TextView
                     android:id="@+id/textOther"
                     style="@style/Text_view2"
+                    android:layout_gravity="center|left"
                     android:text="Normal" />
 
             </LinearLayout>
@@ -100,6 +109,7 @@
                 <TextView
                     android:id="@+id/textTime"
                     style="@style/Text_view2"
+                    android:layout_gravity="center|left"
                     android:text="19 May 2014" />
 
             </LinearLayout>
@@ -113,6 +123,7 @@
                 <TextView
                     android:id="@+id/textLocation"
                     style="@style/Text_view2"
+                    android:layout_gravity="center|left"
                     android:text="West Berkshire" />
 
             </LinearLayout>

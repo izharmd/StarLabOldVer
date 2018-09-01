@@ -76,7 +76,7 @@ public class CreateJobActivity extends AppCompatActivity implements AdapterView.
                     imv_Schedule.setEnabled(true);
                     imv_TimeSheet.setEnabled(true);
                     textJob_header.setText("Job Details");
-                    imv_header.setImageResource(R.mipmap.ic_jobs);
+                    imv_header.setImageResource(R.mipmap.ic_view_job);
                 } else {
                     Toast.makeText(CreateJobActivity.this, "Error in creating fragment", Toast.LENGTH_SHORT).show();
                 }
@@ -103,7 +103,7 @@ public class CreateJobActivity extends AppCompatActivity implements AdapterView.
                     imv_Schedule.setEnabled(true);
                     imv_TimeSheet.setEnabled(true);
                     textJob_header.setText("Job Details");
-                   // imv_header.setImageResource(R.mipmap.ic_jobs);
+                   imv_header.setImageResource(R.mipmap.ic_view_job);
                 } else {
                     Toast.makeText(CreateJobActivity.this, "Error in creating fragment", Toast.LENGTH_SHORT).show();
                 }
@@ -118,7 +118,7 @@ public class CreateJobActivity extends AppCompatActivity implements AdapterView.
                 imv_newJob.setImageResource(R.mipmap.ic_newjob_hover);
                 imv_Schedule.setImageResource(R.mipmap.ic_schedule);
                 imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet);
-
+                imv_header.setImageResource(R.mipmap.ic_createjob_client);
                 fragment = new NewJobFragment();
 
                 if (fragment != null) {
@@ -144,6 +144,7 @@ public class CreateJobActivity extends AppCompatActivity implements AdapterView.
                 imv_newJob.setImageResource(R.mipmap.ic_newjob);
                 imv_Schedule.setImageResource(R.mipmap.ic_schedule_hover);
                 imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet);
+                imv_header.setImageResource(R.mipmap.ic_view_schedule);
                 fragment = new ScheduleFragment();
 
                 if (fragment != null) {
@@ -170,7 +171,7 @@ public class CreateJobActivity extends AppCompatActivity implements AdapterView.
                 imv_newJob.setImageResource(R.mipmap.ic_newjob);
                 imv_Schedule.setImageResource(R.mipmap.ic_schedule);
                 imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet_hover);
-
+                imv_header.setImageResource(R.mipmap.ic_view_job);
                 fragment = new CreateTimeSheetFragment();
 
                 if (fragment != null) {
@@ -229,6 +230,7 @@ public class CreateJobActivity extends AppCompatActivity implements AdapterView.
         //Image views
         imv_Shutdown = (ImageView) findViewById(R.id.imv_Shutdown);
         imv_header = (ImageView) findViewById(R.id.imv_header);
+        imv_header.setImageResource(R.mipmap.ic_view_job);
         imv_Job = (ImageView) findViewById(R.id.imv_Job);
         imv_Home = (ImageView) findViewById(R.id.imv_Home);
        // imv_Home.setImageResource(R.mipmap.ic_home_hover);

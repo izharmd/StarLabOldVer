@@ -66,8 +66,8 @@ public class ViewJobsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //imv_Home.setImageResource(R.mipmap.ic_home_hover);
-                Intent i = new Intent(ViewJobsActivity.this, DashBoardManagerActivity.class);
-                startActivity(i);
+               // Intent i = new Intent(ViewJobsActivity.this, DashBoardManagerActivity.class);
+               // startActivity(i);
                 finish();
             }
         });
@@ -184,8 +184,8 @@ public class ViewJobsActivity extends AppCompatActivity {
         arrManViewJob = new ArrayList<ManagerViewJobModel>();
         for (int i = 0; i < 3; i++) {
             ManagerViewJobModel managerViewJobModel = new ManagerViewJobModel();
-            managerViewJobModel.setName("Md Izhar");
-            managerViewJobModel.setLocation("Kolkata");
+            managerViewJobModel.setName("John");
+            managerViewJobModel.setLocation("London");
             managerViewJobModel.setType("Installation");
             arrManViewJob.add(managerViewJobModel);
         }

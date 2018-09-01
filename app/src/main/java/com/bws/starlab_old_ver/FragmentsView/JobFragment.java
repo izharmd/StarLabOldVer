@@ -1,6 +1,5 @@
 package com.bws.starlab_old_ver.FragmentsView;
 
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -17,14 +16,11 @@ import com.bws.starlab_old_ver.R;
  */
 
 public class JobFragment extends Fragment {
-
-
-    Button btnAssetsDetails,btnLocateMap;
+    Button btnAssetsDetails, btnLocateMap;
     View rootView;
     FragmentManager fragmentManager;
     Fragment fragment = null;
-
-   Button btnTabCustomerDetails,btnTabServiceDetails,btnTabPippeteDetails,btnTabLocation;
+    Button btnTabCustomerDetails, btnTabServiceDetails, btnTabPippeteDetails, btnTabLocation;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -168,8 +164,8 @@ public class JobFragment extends Fragment {
     }
 
     private void initview() {
-       // btnAssetsDetails = rootView.findViewById(R.id.btnAssetsDetails);
-       // btnLocateMap = rootView.findViewById(R.id.btnLocateMap);
+        // btnAssetsDetails = rootView.findViewById(R.id.btnAssetsDetails);
+        // btnLocateMap = rootView.findViewById(R.id.btnLocateMap);
         /*btnTabCustomerDetails = rootView.findViewById(R.id.btnTabCustomerDetails);
         btnTabServiceDetails = rootView.findViewById(R.id.btnTabServiceDetails);
         btnTabPippeteDetails = rootView.findViewById(R.id.btnTabPippeteDetails);

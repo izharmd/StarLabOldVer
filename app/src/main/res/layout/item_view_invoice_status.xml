@@ -27,7 +27,7 @@
             android:id="@+id/textTime"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight=".8"
             android:text="| Time"
             android:gravity="center"
             android:layout_marginLeft="5dp"

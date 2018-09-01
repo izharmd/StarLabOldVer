@@ -60,6 +60,7 @@
             style="@style/dashboard_logo_Text"
             android:text="Approve timesheet" />
     </LinearLayout>
+    <View style="@style/dashboard_View"></View>
 
 
     <LinearLayout

@@ -33,11 +33,11 @@ import android.widget.Toast;
 public class MyJobActivity extends AppCompatActivity {
 
     TextView textJob_header;
-    ImageView imv_Shutdown,imv_header;
+    ImageView imv_Shutdown, imv_header;
     ImageView imv_Job, imv_newJob, imv_Home, imv_Schedule, imv_TimeSheet;
     private RecyclerView recyclerView;
 
-  Button btnPriority, btnToday, btnAll;
+    Button btnPriority, btnToday, btnAll;
     //Button  btnToday, btnAll;
 
     List<PriorityJobModel> arrayPrioriryJob;
@@ -89,7 +89,7 @@ public class MyJobActivity extends AppCompatActivity {
                     imv_Schedule.setEnabled(true);
                     imv_TimeSheet.setEnabled(true);
                     textJob_header.setText("My Jobs");
-                    imv_header.setImageResource(R.mipmap.ic_jobs);
+                    imv_header.setImageResource(R.mipmap.ic_view_job);
                 } else {
                     Toast.makeText(MyJobActivity.this, "Error in creating fragment", Toast.LENGTH_SHORT).show();
                 }
@@ -116,7 +116,7 @@ public class MyJobActivity extends AppCompatActivity {
                     imv_Schedule.setEnabled(true);
                     imv_TimeSheet.setEnabled(true);
                     textJob_header.setText("Job Details");
-                    imv_header.setImageResource(R.mipmap.ic_jobs);
+                    imv_header.setImageResource(R.mipmap.ic_view_job);
                 } else {
                     Toast.makeText(MyJobActivity.this, "Error in creating fragment", Toast.LENGTH_SHORT).show();
                 }
@@ -131,7 +131,7 @@ public class MyJobActivity extends AppCompatActivity {
                 imv_newJob.setImageResource(R.mipmap.ic_newjob_hover);
                 imv_Schedule.setImageResource(R.mipmap.ic_schedule);
                 imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet);
-
+                imv_header.setImageResource(R.mipmap.ic_createjob_client);
                 fragment = new NewJobFragment();
 
                 if (fragment != null) {
@@ -157,6 +157,8 @@ public class MyJobActivity extends AppCompatActivity {
                 imv_newJob.setImageResource(R.mipmap.ic_newjob);
                 imv_Schedule.setImageResource(R.mipmap.ic_schedule_hover);
                 imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet);
+
+                imv_header.setImageResource(R.mipmap.ic_view_schedule);
                 fragment = new ScheduleFragment();
 
                 if (fragment != null) {
@@ -183,6 +185,7 @@ public class MyJobActivity extends AppCompatActivity {
                 imv_newJob.setImageResource(R.mipmap.ic_newjob);
                 imv_Schedule.setImageResource(R.mipmap.ic_schedule);
                 imv_TimeSheet.setImageResource(R.mipmap.ic_timesheet_hover);
+                imv_header.setImageResource(R.mipmap.ic_view_job);
 
                 fragment = new CreateTimeSheetFragment();
 
@@ -242,7 +245,7 @@ public class MyJobActivity extends AppCompatActivity {
 
                 // btnToday.setBackgroundColor(getResources().getColor(R.color.color_activity_Bg));
                 btnToday.setBackgroundResource(R.drawable.ic_priority);
-               btnPriority.setBackgroundResource(R.drawable.ic_priority_hover);
+                btnPriority.setBackgroundResource(R.drawable.ic_priority_hover);
                 btnAll.setBackgroundResource(R.drawable.ic_priority_hover);
             }
         });
@@ -281,6 +284,7 @@ public class MyJobActivity extends AppCompatActivity {
 
         imv_Shutdown = (ImageView) findViewById(R.id.imv_Shutdown);
         imv_header = (ImageView) findViewById(R.id.imv_header);
+        imv_header.setImageResource(R.mipmap.ic_view_job);
         imv_Job = (ImageView) findViewById(R.id.imv_Job);
         imv_Home = (ImageView) findViewById(R.id.imv_Home);
         imv_Home.setImageResource(R.mipmap.ic_home_hover);
