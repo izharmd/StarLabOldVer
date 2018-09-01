@@ -88,7 +88,7 @@ public class MyServiceAdapter extends RecyclerView.Adapter<MyServiceAdapter.View
                     Intent intent = new Intent(v.getContext(), ViewServiceActivity.class);
                     intent.putExtras(bundle);
                     v.getContext().startActivity(intent);
-                    ((Activity) v.getContext()).finish();
+                     v.getContext();
                 }
             });
 

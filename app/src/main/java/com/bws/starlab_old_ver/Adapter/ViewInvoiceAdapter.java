@@ -80,7 +80,6 @@ public class ViewInvoiceAdapter extends RecyclerView.Adapter<ViewInvoiceAdapter.
             textDiscription = (TextView) itemView.findViewById(R.id.textDiscription);
 
 
-
             // on item click
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -102,11 +101,9 @@ public class ViewInvoiceAdapter extends RecyclerView.Adapter<ViewInvoiceAdapter.
                     Intent intent = new Intent(v.getContext(), InvoiceDetailsActivity.class);
                     intent.putExtras(bundle);
                     v.getContext().startActivity(intent);
-                    ((Activity) v.getContext()).finish();
+                    v.getContext();
                 }
             });
-
-
 
 
         }

@@ -1,21 +1,31 @@
 package com.bws.starlab_old_ver.ManagerViews;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bws.starlab_old_ver.Adapter.ManagerTimeSheetAdapter;
 import com.bws.starlab_old_ver.Commons.Common;
 import com.bws.starlab_old_ver.FragmentManagerView.ManagerBillingFrgment;
 import com.bws.starlab_old_ver.FragmentManagerView.ManagerViewJobFragment;
 import com.bws.starlab_old_ver.FragmentManagerView.ManagerViewTimeSheetFrgment;
 import com.bws.starlab_old_ver.FragmentManagerView.ViewScheduleManagerFragment;
 import com.bws.starlab_old_ver.LoginActivity;
+import com.bws.starlab_old_ver.Models.ManagerTimeSheet;
 import com.bws.starlab_old_ver.R;
+import com.dgreenhalgh.android.simpleitemdecoration.linear.DividerItemDecoration;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class AproveTimesheetActivity extends AppCompatActivity {
 
@@ -24,6 +34,12 @@ public class AproveTimesheetActivity extends AppCompatActivity {
     TextView textJob_header;
     ImageView imv_Shutdown,imv_header;
     ImageView imv_Job, imv_newJob, imv_Home, imv_Schedule, imv_TimeSheet;
+
+
+    RecyclerView myservice_recycler_view;
+    List<ManagerTimeSheet> arrManagerTimeSheet;
+    private RecyclerView.Adapter mangViewJobAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +74,26 @@ public class AproveTimesheetActivity extends AppCompatActivity {
 
         TextView textUserType = (TextView) findViewById(R.id.textUserType);
         textUserType.setText("Welcome Alex Johnson Logged in as:" +" "+ Common.userType);
+
+
+        myservice_recycler_view = (RecyclerView) findViewById(R.id.myservice_recycler_view);
+        myservice_recycler_view.setHasFixedSize(true);
+        myservice_recycler_view.setLayoutManager(new LinearLayoutManager(this));
+        Drawable dividerDrawable = ContextCompat.getDrawable(this, R.drawable.line_divider);
+        myservice_recycler_view.addItemDecoration(new DividerItemDecoration(dividerDrawable));
+        arrManagerTimeSheet = new ArrayList<ManagerTimeSheet>();
+        for (int i = 0; i < 3; i++) {
+            ManagerTimeSheet managerViewJobModel = new ManagerTimeSheet();
+            managerViewJobModel.setName("Sam");
+            managerViewJobModel.setDate("15/05/14");
+            managerViewJobModel.setDiscription("Installation");
+            managerViewJobModel.setClientName("Sorrin Aptmnts");
+            arrManagerTimeSheet.add(managerViewJobModel);
+        }
+        mangViewJobAdapter = new ManagerTimeSheetAdapter(arrManagerTimeSheet);
+        myservice_recycler_view.setAdapter(mangViewJobAdapter);
+
+
     }
     private void clickEvent() {
 

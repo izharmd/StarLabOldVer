@@ -36,122 +36,64 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2.7"
-                android:orientation="vertical"
-                android:weightSum="20">
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_header"
+                android:orientation="horizontal"
+                android:weightSum="4">
 
-                <LinearLayout style="@style/LinearLayout_createjob">
-
-                    <TextView
-                        style="@style/Text_view"
-
-                        android:text="Name" />
-
-                    <TextView
-                        android:id="@+id/textAssetsName1"
-                        style="@style/Text_view1"
-                        android:text="Sam Miller" />
-
-                </LinearLayout>
-
-                <LinearLayout style="@style/LinearLayout_createjob">
-
-                    <TextView
-                        style="@style/Text_view"
-                        android:text="Activiry" />
-
-                    <TextView
-                        android:id="@+id/textAssetsName2"
-                        style="@style/Text_view1"
-                        android:text="Installation" />
-
-                </LinearLayout>
-
-                <LinearLayout style="@style/LinearLayout_createjob">
-
-                    <TextView
-                        style="@style/Text_view"
-                        android:text="Client Name" />
-
-                    <TextView
-                        android:id="@+id/textResorce"
-                        style="@style/Text_view1"
-                        android:text="Sorrin appartments" />
-
-                </LinearLayout>
-
-
-                <LinearLayout style="@style/LinearLayout_createjob">
-
-                    <TextView
-                        style="@style/Text_view"
-                        android:text="Work Time " />
-
-                    <TextView
-                        android:id="@+id/textOther"
-                        style="@style/Text_view1"
-                        android:text="4 hrs" />
-
-                </LinearLayout>
-
-
-                <LinearLayout style="@style/LinearLayout_createjob">
-
-                    <TextView
-                        style="@style/Text_view"
-                        android:text="Date" />
-
-                    <TextView
-                        style="@style/Text_view1"
-                        android:text="15/05/2014" />
-
-                </LinearLayout>
-
-
-
-
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:weightSum="2">
-
-                <Button
-                    android:id="@+id/btnAssetsDetails"
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_weight=".8"
+                    android:gravity="center"
+                    android:text="Name"
+                    android:textColor="@color/white" />
 
-                    android:background="@drawable/ic_button"
-                    android:text="Reject"
-                    android:textAllCaps="false"
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight=".8"
+                    android:gravity="center"
+                    android:text="| Date"
+                    android:textColor="@color/white" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
                     android:layout_weight="1"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:gravity="center"
+                    android:text="| Description"
+                    android:textColor="@color/white" />
 
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="20dp"
-                        android:background="@drawable/ic_button"
-                        android:text="Approve"
-                        android:textAllCaps="false"
-                        android:layout_weight="1"
-                        android:textColor="@color/white"
-                        android:textSize="18sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1.4"
+                    android:gravity="center"
+                    android:text="| Client Name"
+                    android:textColor="@color/white" />
 
-                </LinearLayout>
             </LinearLayout>
 
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/myservice_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:scrollbars="vertical" />
 
         </LinearLayout>
 

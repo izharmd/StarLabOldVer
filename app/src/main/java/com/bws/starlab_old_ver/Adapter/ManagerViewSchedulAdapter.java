@@ -87,7 +87,7 @@ public class ManagerViewSchedulAdapter extends RecyclerView.Adapter<ManagerViewS
                     Intent intent = new Intent(v.getContext(), ApproveScheduleManagerActivity.class);
                     intent.putExtras(bundle);
                     v.getContext().startActivity(intent);
-                    ((Activity) v.getContext()).finish();
+                    v.getContext();
 
                 }
             });

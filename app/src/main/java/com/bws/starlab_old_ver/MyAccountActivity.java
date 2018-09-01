@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bws.starlab_old_ver.Commons.Common;
 import com.bws.starlab_old_ver.FragmentsView.CreateTimeSheetFragment;
 import com.bws.starlab_old_ver.FragmentsView.HomeFragment;
 import com.bws.starlab_old_ver.FragmentsView.JobFragment;
@@ -227,6 +228,7 @@ public class MyAccountActivity extends AppCompatActivity {
 
         imv_TimeSheet = (ImageView) findViewById(R.id.imv_TimeSheet);
 
-
+        TextView textUserType = (TextView) findViewById(R.id.textUserType);
+        textUserType.setText("Welcome Alex Johnson Logged in as:" +" "+ Common.userType);
     }
 }

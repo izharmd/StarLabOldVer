@@ -21,7 +21,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDFVOM4ifkX8zm9l237F4S4iXAJaKTcato" />
 
-        <activity android:name="com.bws.starlab_old_ver.SplashActivity">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,36 +29,38 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.bws.starlab_old_ver.Firebase.MyFirebaseMessagingService">
+        <service android:name=".Firebase.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
-        <activity android:name="com.bws.starlab_old_ver.LoginActivity" />
-        <activity android:name="com.bws.starlab_old_ver.DashboardActivity" />
-        <activity android:name="com.bws.starlab_old_ver.CreateJobActivity" />
-        <activity android:name="com.bws.starlab_old_ver.MyJobActivity" />
-        <activity android:name="com.bws.starlab_old_ver.AssetsDetailsActivity" />
-        <activity android:name="com.bws.starlab_old_ver.CreateTimeSheetActivity" />
-        <activity android:name="com.bws.starlab_old_ver.MyAccountActivity" />
-        <activity android:name="com.bws.starlab_old_ver.SettingActivity" />
-        <activity android:name="com.bws.starlab_old_ver.DashBoardClientActivity" />
-        <activity android:name="com.bws.starlab_old_ver.MyServiceActivity" />
-        <activity android:name="com.bws.starlab_old_ver.ClientViews.CreateServiceRequestActivity" />
-        <activity android:name="com.bws.starlab_old_ver.ClientViews.ViewInvoiceStatusActivity" />
-        <activity android:name="com.bws.starlab_old_ver.PushNotificationActivity" />
-        <activity android:name="com.bws.starlab_old_ver.ModifyScheduleActivity" />
-        <activity android:name="com.bws.starlab_old_ver.ManagerViews.ViewJobsActivity" />
-        <activity android:name="com.bws.starlab_old_ver.ManagerViews.DashBoardManagerActivity" />
-        <activity android:name="com.bws.starlab_old_ver.ManagerViews.JobDetailsManagerActivity" />
-        <activity android:name="com.bws.starlab_old_ver.ManagerViews.ApproveScheduleManagerActivity" />
-        <activity android:name="com.bws.starlab_old_ver.ManagerViews.AproveTimesheetActivity" />
-        <activity android:name="com.bws.starlab_old_ver.ManagerViews.BillingStatusActivity" />
-        <activity android:name="com.bws.starlab_old_ver.ManagerViews.ViewScheduleActivity" />
-        <activity android:name="com.bws.starlab_old_ver.ClientViews.ViewServiceActivity" />
-        <activity android:name="com.bws.starlab_old_ver.ClientViews.InvoiceDetailsActivity" />
-        <activity android:name="com.bws.starlab_old_ver.CalenderTestActivity"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".CreateJobActivity" />
+        <activity android:name=".MyJobActivity" />
+        <activity android:name=".AssetsDetailsActivity" />
+        <activity android:name=".CreateTimeSheetActivity" />
+        <activity android:name=".MyAccountActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".DashBoardClientActivity" />
+        <activity android:name=".MyServiceActivity" />
+        <activity android:name=".ClientViews.CreateServiceRequestActivity" />
+        <activity android:name=".ClientViews.ViewInvoiceStatusActivity" />
+        <activity android:name=".PushNotificationActivity" />
+        <activity android:name=".ModifyScheduleActivity" />
+        <activity android:name=".ManagerViews.ViewJobsActivity" />
+        <activity android:name=".ManagerViews.DashBoardManagerActivity" />
+        <activity android:name=".ManagerViews.JobDetailsManagerActivity" />
+        <activity android:name=".ManagerViews.ApproveScheduleManagerActivity" />
+        <activity android:name=".ManagerViews.AproveTimesheetActivity" />
+        <activity android:name=".ManagerViews.BillingStatusActivity" />
+        <activity android:name=".ManagerViews.ViewScheduleActivity" />
+        <activity android:name=".ClientViews.ViewServiceActivity" />
+        <activity android:name=".ClientViews.InvoiceDetailsActivity" />
+        <activity android:name=".CalenderTestActivity" />
+        <activity android:name=".ManagerViews.AproveTimeSheetDetailsActivity" />
+        <activity android:name=".ManagerViews.BillingActivity"></activity>
     </application>
 
 </manifest>

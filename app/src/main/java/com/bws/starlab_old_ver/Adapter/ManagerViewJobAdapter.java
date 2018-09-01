@@ -88,7 +88,7 @@ public class ManagerViewJobAdapter extends RecyclerView.Adapter<ManagerViewJobAd
                     Intent intent = new Intent(v.getContext(), JobDetailsManagerActivity.class);
                     intent.putExtras(bundle);
                     v.getContext().startActivity(intent);
-                    ((Activity) v.getContext()).finish();
+                     v.getContext();
                 }
             });
         }

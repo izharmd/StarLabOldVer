@@ -63,7 +63,7 @@ public class DashBoardManagerActivity extends AppCompatActivity {
         ll_ViewBillingStatus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DashBoardManagerActivity.this, BillingStatusActivity.class);
+                Intent intent = new Intent(DashBoardManagerActivity.this, BillingActivity.class);
                 startActivity(intent);
             }
         });

@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.bws.starlab_old_ver.ManagerViews.AproveTimeSheetDetailsActivity;
 import com.bws.starlab_old_ver.ManagerViews.AproveTimesheetActivity;
 import com.bws.starlab_old_ver.Models.ManagerTimeSheet;
 import com.bws.starlab_old_ver.R;
@@ -97,10 +98,14 @@ public class ManagerTimeSheetAdapter extends RecyclerView.Adapter<ManagerTimeShe
                     bundle.putString("location", clickedDataItem.getDate());
                     bundle.putString("type", clickedDataItem.getDiscription());
                     bundle.putString("type", clickedDataItem.getClientName());
-                    Intent intent = new Intent(v.getContext(), AproveTimesheetActivity.class);
+
+
+                   // v.getContext().startActivity(PUT_YOUR_INTENT_HERE);
+
+                    Intent intent = new Intent(v.getContext(), AproveTimeSheetDetailsActivity.class);
                     intent.putExtras(bundle);
                     v.getContext().startActivity(intent);
-                    ((Activity) v.getContext()).finish();
+                     v.getContext();
 
                 }
             });
